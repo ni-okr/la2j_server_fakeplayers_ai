@@ -2,7 +2,7 @@ package net.sf.l2j.botmanager.learning;
 
 import net.sf.l2j.botmanager.behaviors.BehaviorType;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.concurrent.atomic.AtomicDouble;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -18,11 +18,11 @@ public class BehaviorFeedback {
     private final AtomicLong totalExecutionTime = new AtomicLong(0);
     private final AtomicLong minExecutionTime = new AtomicLong(Long.MAX_VALUE);
     private final AtomicLong maxExecutionTime = new AtomicLong(0);
-    private final AtomicDouble averageExecutionTime = new AtomicDouble(0.0);
+    private final AtomicReference<Double> averageExecutionTime = new AtomicReference<>(0.0);
     private final AtomicLong totalActionsPerformed = new AtomicLong(0);
     private final AtomicLong minActionsPerformed = new AtomicLong(Long.MAX_VALUE);
     private final AtomicLong maxActionsPerformed = new AtomicLong(0);
-    private final AtomicDouble averageActionsPerformed = new AtomicDouble(0.0);
+    private final AtomicReference<Double> averageActionsPerformed = new AtomicReference<>(0.0);
     
     // Детали выполнения
     private final List<String> recentDetails = new CopyOnWriteArrayList<>();

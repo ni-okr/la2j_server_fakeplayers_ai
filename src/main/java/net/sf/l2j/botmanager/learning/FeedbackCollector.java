@@ -11,6 +11,8 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Set;
+import java.util.HashSet;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
@@ -161,10 +163,37 @@ public class FeedbackCollector {
     }
     
     /**
+     * Получить статистику по действиям для конкретного бота.
+     */
+    public ActionFeedback getActionFeedback(int botId) {
+        // TODO: Реализовать получение статистики по конкретному боту
+        // Пока возвращаем null, так как структура данных не поддерживает это
+        return null;
+    }
+    
+    /**
      * Получить статистику по поведениям.
      */
     public Map<BehaviorType, BehaviorFeedback> getBehaviorFeedback() {
         return new ConcurrentHashMap<>(behaviorFeedback);
+    }
+    
+    /**
+     * Получить статистику по поведениям для конкретного бота.
+     */
+    public BehaviorFeedback getBehaviorFeedback(int botId) {
+        // TODO: Реализовать получение статистики по конкретному боту
+        // Пока возвращаем null, так как структура данных не поддерживает это
+        return null;
+    }
+    
+    /**
+     * Получить список всех идентификаторов ботов.
+     */
+    public Set<Integer> getAllBotIds() {
+        // TODO: Реализовать получение списка всех ботов
+        // Пока возвращаем пустой набор
+        return new HashSet<>();
     }
     
     /**
