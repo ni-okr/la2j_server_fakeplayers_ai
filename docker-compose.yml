@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  mariadb-l2j:
+    image: mariadb:10.11
+    container_name: mariadb-l2j
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: l2jdb
+      MARIADB_USER: l2j
+      MARIADB_PASSWORD: l2j
+    ports:
+      - "3307:3306"  # avoid conflict with host 3306
+    volumes:
+      - ./db/mariadb:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mariadb-admin", "ping", "-hlocalhost", "-ul2j", "-pl2j"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
