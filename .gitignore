@@ -67,11 +67,27 @@ login/
 gameserver/
 loginserver/
 libs/
+lib/
+scripts/
+tools/
 *.properties
 *.xml
 *.txt
+*.ini
+*.cfg
+*.dll
+*.exe
 
 # Database
 db/
 *.sql
 *.dump
+
+# Server logs and runtime files
+gameserver*.log
+loginserver*.log
+engine.dll
+NWindow.dll
+L2.exe
+start_servers.sh
+docker-compose.yml
