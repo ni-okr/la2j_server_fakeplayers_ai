@@ -46,6 +46,15 @@ public class BotContext {
         playerInstance.set(instance);
         updateLastActivity();
     }
+    
+    public void setBot(EnhancedFakePlayer bot) {
+        setData("bot", bot);
+        updateLastActivity();
+    }
+    
+    public EnhancedFakePlayer getBot() {
+        return getData("bot");
+    }
 
     public void setData(String key, Object value) {
         data.put(key, value);
