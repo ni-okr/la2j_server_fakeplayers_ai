@@ -52,8 +52,8 @@ L2J Bot System - это комплексная система искусстве
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/ni-okr/l2j-bot-system.git
-cd l2j-bot-system
+git clone https://github.com/ni-okr/la2j_server_fakeplayers_ai.git
+cd la2j_server_fakeplayers_ai
 ```
 
 2. Соберите проект:
