@@ -33,7 +33,7 @@ public abstract class AbstractBehavior implements IBehavior {
     
     @Override
     public final boolean execute(EnhancedFakePlayer bot) {
-        if (!canExecute(bot.getContext())) {
+        if (bot == null || !canExecute(bot.getContext())) {
             return false;
         }
         
