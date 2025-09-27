@@ -171,17 +171,19 @@
   },
   "active": "f64193dcdd1200c4",
   "lastOpenFiles": [
+    "STAGE_3_COMPLETION_REPORT.md",
+    "modern_client/setup_costume_system.sh",
+    "modern_client/Source/ModernLineage2/Public/UI/CostumeDragDrop.h",
+    "modern_client/Source/ModernLineage2/Public/Systems/CostumeCollectionManager.h",
+    "modern_client/Source/ModernLineage2/Public/UI/CostumePreview3D.h",
+    "modern_client/Source/ModernLineage2/Public/UI/CostumeWardrobeWidget.h",
+    "modern_client/Source/ModernLineage2/Public/UI",
+    "modern_client/Source/ModernLineage2/Private/Systems/CostumeSystem.cpp",
+    "documentation/GRAPHICS_SYSTEMS_GUIDE.md",
     "STAGE_2_COMPLETION_REPORT.md",
     "modern_client/setup_graphics.sh",
     "modern_client/Source/ModernLineage2/Public/Rendering/GraphicsManager.h",
     "modern_client/Source/ModernLineage2/Public/Effects/ParticleEffectManager.h",
-    "modern_client/Source/ModernLineage2/Public/Effects",
-    "modern_client/Source/ModernLineage2/Public/Rendering/DynamicLightingManager.h",
-    "modern_client/Source/ModernLineage2/Public/Rendering/HDRManager.h",
-    "modern_client/Source/ModernLineage2/Public/Rendering/PBRMaterialManager.h",
-    "modern_client/Source/ModernLineage2/Public/Rendering",
-    "STAGE_1_COMPLETION_REPORT.md",
-    "modern_client/setup_project.sh",
-    "modern_client/Source/ModernLineage2/Private/ModernLineage2.cpp"
+    "STAGE_1_COMPLETION_REPORT.md"
   ]
 }
