@@ -91,3 +91,54 @@ NWindow.dll
 L2.exe
 start_servers.sh
 docker-compose.yml
+
+# Heavy files and directories (not for GitHub)
+# Client deobfuscation results (local archive only)
+client_deobfuscation/
+client/
+client_nogg_backup/
+
+# Large game assets and binaries
+*.utx
+*.uax
+*.ukx
+*.unr
+*.usx
+*.u
+*.int
+*.dat
+*.ogg
+*.bmp
+*.gly
+*.ttf
+
+# Temporary and backup directories
+temp_l2j_files/
+.backup_path_rewrite_*/
+reports/
+logs/*.log
+
+# Large Maven artifacts
+target/classes/
+target/generated-sources/
+target/maven-archiver/
+target/maven-status/
+
+# System specific files
+crest/
+data/
+config
+config/
+config/servername.xml
+config/rates.xml
+
+# Development artifacts
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# OS specific
+.DS_Store
+Thumbs.db
