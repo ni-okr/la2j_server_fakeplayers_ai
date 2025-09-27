@@ -1,0 +1,5 @@
+CollectionID,CollectionName,Theme,RequiredLevel,CostumePieceIDs,Description
+"classic_set_001","Classic Adventurer","Classic",1,"upper_001,lower_001,shoes_001,accessories_001,hair_001","Complete classic adventurer outfit"
+"fantasy_set_001","Mystic Mage","Fantasy",10,"upper_002,lower_002,shoes_002,accessories_002,hair_002","Mystical mage robes and accessories"
+"modern_set_001","Urban Warrior","Modern",5,"upper_003,lower_003,shoes_003,accessories_003,hair_003","Modern tactical gear"
+"seasonal_set_001","Winter Collection","Seasonal",15,"upper_004,lower_004,shoes_004,accessories_004,hair_004","Warm winter clothing set"

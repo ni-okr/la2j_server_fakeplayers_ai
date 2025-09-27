@@ -1,0 +1,6 @@
+RebellionType,Severity,ConsequenceType,ConsequenceValue,Description
+"Escape",1,"GoldLoss",100,"Slave escaped, lost 100 gold"
+"Violence",3,"ItemLoss",1,"Slave became violent, lost 1 item"
+"Sabotage",5,"ReputationLoss",50,"Slave sabotaged, lost 50 reputation"
+"Organized",8,"SlaveDeath",1,"Organized rebellion, slave died"
+"Mass",10,"GoldLoss",500,"Mass rebellion, lost 500 gold"

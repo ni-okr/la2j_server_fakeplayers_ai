@@ -1,0 +1,9 @@
+QuestID,QuestName,QuestType,RequiredLevel,RequiredCompanions,Difficulty,Duration,RequiredClasses,Rewards,ExperienceReward,GoldReward,ReputationReward
+"gq_001","Dragon's Lair","Dungeon",10,2,5,60,"Warrior,Mage","Dragon Scale,Magic Sword",500,200,50
+"gq_002","Goblin King","Boss",8,1,3,30,"Any","Goblin Crown,Gold",300,150,30
+"gq_003","Lost Temple","Exploration",12,3,7,90,"Rogue,Cleric,Mage","Ancient Artifacts",800,400,80
+"gq_004","Merchant Escort","Escort",6,2,2,45,"Warrior,Archer","Merchant's Gratitude",200,100,20
+"gq_005","Village Defense","Defense",15,4,8,120,"Warrior,Archer,Cleric,Mage","Hero's Medal",1000,500,100
+"gq_006","Demon Lord","Boss",20,5,10,180,"All Classes","Demon Lord's Heart",2000,1000,200
+"gq_007","Crystal Caverns","Dungeon",14,3,6,75,"Mage,Cleric,Warrior","Magic Crystals",600,300,60
+"gq_008","Bandit Hideout","Exploration",9,2,4,50,"Rogue,Archer","Stolen Goods",350,175,35

@@ -1,0 +1,9 @@
+SlaveID,SlaveName,SlaveType,Price,BaseLoyalty,RequiredLevel,Gender,Description,MeshPath,MaterialPaths,Skills
+"slave_001","Elven Warrior","Combat",500,50,5,"Female","Skilled elven warrior with combat experience","/Game/Slaves/Combat/ElvenWarrior","/Game/Materials/Slaves/Combat/ElvenWarrior_Material","Combat,Leadership"
+"slave_002","Dwarf Blacksmith","Labor",300,60,3,"Male","Expert blacksmith and craftsman","/Game/Slaves/Labor/DwarfBlacksmith","/Game/Materials/Slaves/Labor/DwarfBlacksmith_Material","Crafting,Mining"
+"slave_003","Human Dancer","Decorative",200,40,1,"Female","Beautiful dancer and entertainer","/Game/Slaves/Decorative/HumanDancer","/Game/Materials/Slaves/Decorative/HumanDancer_Material","Entertainment,Charm"
+"slave_004","Orc Laborer","Labor",150,70,2,"Male","Strong orc for heavy labor","/Game/Slaves/Labor/OrcLaborer","/Game/Materials/Slaves/Labor/OrcLaborer_Material","Labor,Strength"
+"slave_005","Dark Elf Assassin","Combat",800,30,10,"Female","Deadly assassin with stealth skills","/Game/Slaves/Combat/DarkElfAssassin","/Game/Materials/Slaves/Combat/DarkElfAssassin_Material","Stealth,Assassination"
+"slave_006","Goblin Merchant","Labor",100,80,1,"Male","Cunning goblin trader","/Game/Slaves/Labor/GoblinMerchant","/Game/Materials/Slaves/Labor/GoblinMerchant_Material","Trading,Negotiation"
+"slave_007","Angel Healer","Special",1000,90,15,"Female","Divine healer with powerful magic","/Game/Slaves/Special/AngelHealer","/Game/Materials/Slaves/Special/AngelHealer_Material","Healing,Divine Magic"
+"slave_008","Demon Warrior","Combat",1200,20,20,"Male","Powerful demon warrior","/Game/Slaves/Combat/DemonWarrior","/Game/Materials/Slaves/Combat/DemonWarrior_Material","Combat,Dark Magic"

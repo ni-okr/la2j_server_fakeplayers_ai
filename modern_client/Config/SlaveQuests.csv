@@ -1,0 +1,6 @@
+QuestID,QuestName,QuestType,RequiredLevel,Reward,Description
+"slave_quest_001","Rescue the Captured","Rescue",5,200,"Rescue a group of captured slaves"
+"slave_quest_002","Train the Newcomer","Training",3,100,"Train a new slave to increase loyalty"
+"slave_quest_003","Suppress the Rebellion","Suppression",10,500,"Suppress a slave rebellion"
+"slave_quest_004","Find the Runaway","Search",7,300,"Find and capture a runaway slave"
+"slave_quest_005","Negotiate Peace","Diplomacy",15,800,"Negotiate peace with rebellious slaves"

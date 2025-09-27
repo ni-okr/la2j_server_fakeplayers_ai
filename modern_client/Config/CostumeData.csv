@@ -1,0 +1,6 @@
+CostumeID,CostumeName,SlotName,Category,Price,RequiredLevel,Gender,Description,MeshPath,MaterialPaths
+"upper_001","Classic Shirt","Upper","Classic",100,1,"Both","Basic cotton shirt","/Game/Costumes/Upper/ClassicShirt","/Game/Materials/Costumes/Upper/ClassicShirt_Material"
+"lower_001","Classic Pants","Lower","Classic",150,1,"Both","Basic cotton pants","/Game/Costumes/Lower/ClassicPants","/Game/Materials/Costumes/Lower/ClassicPants_Material"
+"shoes_001","Leather Boots","Shoes","Classic",200,1,"Both","Sturdy leather boots","/Game/Costumes/Shoes/LeatherBoots","/Game/Materials/Costumes/Shoes/LeatherBoots_Material"
+"accessories_001","Leather Belt","Accessories","Classic",50,1,"Both","Simple leather belt","/Game/Costumes/Accessories/LeatherBelt","/Game/Materials/Costumes/Accessories/LeatherBelt_Material"
+"hair_001","Short Hair","Hair","Classic",75,1,"Both","Short practical haircut","/Game/Costumes/Hair/ShortHair","/Game/Materials/Costumes/Hair/ShortHair_Material"

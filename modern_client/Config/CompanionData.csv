@@ -1,0 +1,9 @@
+CompanionID,CompanionName,Class,Level,HireCost,RequiredReputation,BaseRelationship,PersonalityType,Description,MeshPath,MaterialPaths,Skills
+"comp_001","Aria the Warrior","Warrior",5,300,50,60,"Brave","Skilled warrior with strong combat abilities","/Game/Companions/Warriors/Aria","/Game/Materials/Companions/Warriors/Aria_Material","Combat,Leadership,Shield"
+"comp_002","Luna the Mage","Mage",7,500,75,50,"Mysterious","Powerful mage with arcane knowledge","/Game/Companions/Mages/Luna","/Game/Materials/Companions/Mages/Luna_Material","Magic,Healing,Enchanting"
+"comp_003","Kai the Archer","Archer",4,250,25,70,"Independent","Expert archer with keen eyesight","/Game/Companions/Archers/Kai","/Game/Materials/Companions/Archers/Kai_Material","Archery,Scouting,Survival"
+"comp_004","Sister Maria","Cleric",6,400,60,80,"Loyal","Devoted cleric with healing powers","/Game/Companions/Clerics/Maria","/Game/Materials/Companions/Clerics/Maria_Material","Healing,Blessing,Divine Magic"
+"comp_005","Shadow the Rogue","Rogue",8,600,100,40,"Cautious","Stealthy rogue with thieving skills","/Game/Companions/Rogues/Shadow","/Game/Materials/Companions/Rogues/Shadow_Material","Stealth,Lockpicking,Poison"
+"comp_006","Dragon Knight","Special",15,1500,200,30,"Brave","Legendary dragon knight","/Game/Companions/Special/DragonKnight","/Game/Materials/Companions/Special/DragonKnight_Material","Dragon Magic,Combat,Leadership"
+"comp_007","Elven Ranger","Archer",10,800,150,55,"Independent","Elven ranger with nature magic","/Game/Companions/Archers/ElvenRanger","/Game/Materials/Companions/Archers/ElvenRanger_Material","Archery,Nature Magic,Scouting"
+"comp_008","Dark Sorcerer","Mage",12,1000,180,35,"Mysterious","Dark sorcerer with forbidden knowledge","/Game/Companions/Mages/DarkSorcerer","/Game/Materials/Companions/Mages/DarkSorcerer_Material","Dark Magic,Curses,Summoning"
