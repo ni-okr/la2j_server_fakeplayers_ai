@@ -1,0 +1,11 @@
+ViolationType,Severity,AutoAction,Description
+"SpeedHack",8,"Kick","Player moving faster than allowed"
+"TeleportHack",9,"TempBan","Player teleporting without valid skill"
+"ItemDupe",10,"PermBan","Player duplicating items"
+"StatHack",7,"Warn","Player modifying stats illegally"
+"PacketManipulation",9,"TempBan","Player sending invalid packets"
+"MemoryModification",10,"PermBan","Player modifying game memory"
+"ProcessInjection",10,"PermBan","External process injection detected"
+"DebuggerDetected",6,"Warn","Debugger attached to process"
+"SuspiciousBehavior",4,"Log","Unusual player behavior pattern"
+"RapidActions",5,"Warn","Too many actions per second"
