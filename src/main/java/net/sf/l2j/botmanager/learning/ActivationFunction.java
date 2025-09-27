@@ -36,6 +36,32 @@ public abstract class ActivationFunction {
      */
     public abstract String getName();
     
+    // ==================== СТАТИЧЕСКИЕ МЕТОДЫ ====================
+    
+    /**
+     * Применяет сигмоидальную функцию
+     * 
+     * @param x входное значение
+     * @return результат сигмоиды
+     */
+    public static double sigmoid(double x) {
+        if (x > 700) return 1.0;
+        if (x < -700) return 0.0;
+        return 1.0 / (1.0 + Math.exp(-x));
+    }
+    
+    /**
+     * Применяет гиперболический тангенс
+     * 
+     * @param x входное значение
+     * @return результат tanh
+     */
+    public static double tanh(double x) {
+        if (x > 700) return 1.0;
+        if (x < -700) return -1.0;
+        return Math.tanh(x);
+    }
+    
     /**
      * Сигмоидальная функция активации
      */
