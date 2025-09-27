@@ -171,19 +171,20 @@
   },
   "active": "f64193dcdd1200c4",
   "lastOpenFiles": [
+    "STAGE_4_COMPLETION_REPORT.md",
+    "modern_client/setup_slave_trading.sh",
+    "modern_client/Source/ModernLineage2/Public/Systems/SlaveRebellionSystem.h",
+    "modern_client/Source/ModernLineage2/Public/UI/SlaveManagementWidget.h",
+    "modern_client/Source/ModernLineage2/Public/UI/SlaveMarketWidget.h",
+    "modern_client/Source/ModernLineage2/Private/Systems/SlaveTradingSystem.cpp",
     "STAGE_3_COMPLETION_REPORT.md",
     "modern_client/setup_costume_system.sh",
     "modern_client/Source/ModernLineage2/Public/UI/CostumeDragDrop.h",
     "modern_client/Source/ModernLineage2/Public/Systems/CostumeCollectionManager.h",
     "modern_client/Source/ModernLineage2/Public/UI/CostumePreview3D.h",
     "modern_client/Source/ModernLineage2/Public/UI/CostumeWardrobeWidget.h",
-    "modern_client/Source/ModernLineage2/Public/UI",
-    "modern_client/Source/ModernLineage2/Private/Systems/CostumeSystem.cpp",
     "documentation/GRAPHICS_SYSTEMS_GUIDE.md",
     "STAGE_2_COMPLETION_REPORT.md",
-    "modern_client/setup_graphics.sh",
-    "modern_client/Source/ModernLineage2/Public/Rendering/GraphicsManager.h",
-    "modern_client/Source/ModernLineage2/Public/Effects/ParticleEffectManager.h",
     "STAGE_1_COMPLETION_REPORT.md"
   ]
 }
