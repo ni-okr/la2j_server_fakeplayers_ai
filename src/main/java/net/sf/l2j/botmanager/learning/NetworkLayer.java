@@ -63,6 +63,18 @@ public abstract class NetworkLayer {
     public abstract void initialize(int inputSize, int outputSize);
     
     /**
+     * Инициализирует слой с заданными размерами (для 3D слоев)
+     * 
+     * @param inputHeight высота входа
+     * @param inputWidth ширина входа
+     * @param inputChannels каналы входа
+     */
+    public void initialize(int inputHeight, int inputWidth, int inputChannels) {
+        // Реализация по умолчанию - переопределяется в подклассах
+        throw new UnsupportedOperationException("3D initialization not supported by this layer type");
+    }
+    
+    /**
      * Обновляет веса слоя
      * 
      * @param learningRate скорость обучения
@@ -104,6 +116,9 @@ public abstract class NetworkLayer {
         DROPOUT("Dropout"),
         BATCH_NORMALIZATION("BatchNormalization"),
         CONVOLUTIONAL("Convolutional"),
+        CONV2D("Conv2D"),
+        MAX_POOLING("MaxPooling"),
+        FLATTEN("Flatten"),
         RECURRENT("Recurrent"),
         LSTM("LSTM"),
         GRU("GRU");
