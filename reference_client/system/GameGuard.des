@@ -1,0 +1,15 @@
+# GameGuard Bypass Configuration
+# This file completely disables GameGuard protection
+# All GameGuard checks are bypassed for local development
+
+[GameGuard]
+Enabled=0
+BypassMode=1
+SkipChecks=1
+AllowLocalhost=1
+DisableProtection=1
+
+[Client]
+AllowDirectLaunch=1
+SkipUpdateCheck=1
+BypassLauncher=1

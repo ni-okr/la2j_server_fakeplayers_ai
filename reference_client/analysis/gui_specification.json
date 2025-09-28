@@ -1,0 +1,84 @@
+{
+  "login_screen": {
+    "window_size": "1024x768",
+    "background": "dark_fantasy_image",
+    "elements": {
+      "login_field": {
+        "position": "center",
+        "size": "200x30",
+        "style": "text_input_dark",
+        "placeholder": "Логин"
+      },
+      "password_field": {
+        "position": "center",
+        "size": "200x30",
+        "style": "password_input_dark",
+        "placeholder": "Пароль"
+      },
+      "login_button": {
+        "position": "center",
+        "size": "100x40",
+        "style": "golden_button",
+        "text": "Войти"
+      },
+      "register_button": {
+        "position": "center",
+        "size": "100x40",
+        "style": "silver_button",
+        "text": "Регистрация"
+      }
+    }
+  },
+  "character_selection": {
+    "window_size": "1024x768",
+    "layout": "split_panel",
+    "left_panel": {
+      "width": "300px",
+      "content": "character_list"
+    },
+    "right_panel": {
+      "width": "724px",
+      "content": "3d_character_model"
+    }
+  },
+  "game_interface": {
+    "window_size": "1024x768",
+    "elements": {
+      "hp_bar": {
+        "position": "top_left",
+        "size": "200x20",
+        "color": "red"
+      },
+      "mp_bar": {
+        "position": "top_left",
+        "size": "200x20",
+        "color": "blue"
+      },
+      "exp_bar": {
+        "position": "top_left",
+        "size": "200x20",
+        "color": "green"
+      },
+      "skills_panel": {
+        "position": "bottom_center",
+        "size": "400x60",
+        "style": "hotkey_bar"
+      },
+      "inventory_panel": {
+        "position": "bottom_right",
+        "size": "200x150",
+        "style": "inventory_grid"
+      },
+      "minimap": {
+        "position": "top_right",
+        "size": "200x200",
+        "style": "minimap"
+      },
+      "chat": {
+        "position": "bottom_left",
+        "size": "300x150",
+        "style": "chat_window"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Costume System",
+	"Description": "Advanced costume system for Modern Lineage II",
+	"Category": "Game Features",
+	"CreatedBy": "Modern Lineage II Development Team",
+	"CanContainContent": true,
+	"Modules": [
+		{
+			"Name": "CostumeSystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
+

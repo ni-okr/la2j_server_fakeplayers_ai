@@ -1,0 +1,3 @@
+# CharacterSelection Blueprint
+# Elements: CharacterList, CharacterModel, CharacterInfo, EnterGameButton, CreateCharacterButton, DeleteCharacterButton
+# Style: split_panel_layout

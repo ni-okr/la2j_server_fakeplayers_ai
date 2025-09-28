@@ -195,90 +195,114 @@ EOF
     print_success "Графические оптимизации настроены"
 }
 
-# Оптимизация системы
+# Оптимизация системы (БЕЗ ИЗМЕНЕНИЯ ОС)
 optimize_system() {
-    print_status "Оптимизация системных настроек..."
+    print_status "Создание рекомендаций по оптимизации системы..."
     
-    # Создание скрипта системных оптимизаций
-    cat > system_optimization.sh << 'EOF'
+    # Создание скрипта с рекомендациями (БЕЗ ИЗМЕНЕНИЯ СИСТЕМЫ)
+    cat > system_optimization_recommendations.sh << 'EOF'
 #!/bin/bash
-# Системные оптимизации для игр
+# РЕКОМЕНДАЦИИ по оптимизации системы для игр
+# ВНИМАНИЕ: Этот скрипт НЕ изменяет системные настройки!
 
-# CPU Governor
-echo "performance" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor 2>/dev/null || true
-
-# I/O Scheduler
-echo "deadline" | sudo tee /sys/block/*/queue/scheduler 2>/dev/null || true
-
-# Swappiness
-echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.conf
-
-# Network optimizations
-echo "net.core.rmem_max = 16777216" | sudo tee -a /etc/sysctl.conf
-echo "net.core.wmem_max = 16777216" | sudo tee -a /etc/sysctl.conf
-echo "net.ipv4.tcp_rmem = 4096 87380 16777216" | sudo tee -a /etc/sysctl.conf
-echo "net.ipv4.tcp_wmem = 4096 65536 16777216" | sudo tee -a /etc/sysctl.conf
-
-# Apply changes
-sudo sysctl -p
-
-echo "Системные оптимизации применены"
+echo "🔧 РЕКОМЕНДАЦИИ ПО ОПТИМИЗАЦИИ СИСТЕМЫ"
+echo "====================================="
+echo
+echo "Для улучшения производительности игры рекомендуется:"
+echo
+echo "1. CPU Governor:"
+echo "   - Текущий: $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 2>/dev/null || echo 'Недоступно')"
+echo "   - Рекомендуется: performance (для максимальной производительности)"
+echo "   - Команда: echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+echo
+echo "2. I/O Scheduler:"
+echo "   - Текущий: $(cat /sys/block/*/queue/scheduler 2>/dev/null | head -1 || echo 'Недоступно')"
+echo "   - Рекомендуется: deadline (для SSD) или mq-deadline (для NVMe)"
+echo "   - Команда: echo deadline | sudo tee /sys/block/*/queue/scheduler"
+echo
+echo "3. Swappiness:"
+echo "   - Текущий: $(sysctl vm.swappiness | cut -d= -f2)"
+echo "   - Рекомендуется: 10 (для игр)"
+echo "   - Команда: echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf"
+echo
+echo "4. Сетевые оптимизации:"
+echo "   - Добавить в /etc/sysctl.conf:"
+echo "     net.core.rmem_max = 16777216"
+echo "     net.core.wmem_max = 16777216"
+echo "     net.ipv4.tcp_rmem = 4096 87380 16777216"
+echo "     net.ipv4.tcp_wmem = 4096 65536 16777216"
+echo
+echo "⚠️  ВНИМАНИЕ: Эти изменения могут повлиять на работу других приложений!"
+echo "⚠️  Применяйте их только если понимаете последствия!"
+echo
+echo "Для применения изменений выполните команды вручную."
 EOF
-    chmod +x system_optimization.sh
+    chmod +x system_optimization_recommendations.sh
     
-    print_success "Системные оптимизации настроены"
+    print_success "Рекомендации по оптимизации созданы (БЕЗ ИЗМЕНЕНИЯ СИСТЕМЫ)"
 }
 
-# Настройка аудиосистемы
+# Настройка аудиосистемы (БЕЗ ИЗМЕНЕНИЯ СИСТЕМЫ)
 setup_audio() {
-    print_status "Настройка аудиосистемы..."
+    print_status "Определение аудиосистемы (БЕЗ ИЗМЕНЕНИЯ НАСТРОЕК)..."
     
     # Определение аудиосистемы
     if command -v pulseaudio &> /dev/null; then
         AUDIO_SYSTEM="PulseAudio"
         
-        # PulseAudio оптимизации
-        cat > audio_optimization.sh << 'EOF'
+        # Создание рекомендаций для PulseAudio (БЕЗ ИЗМЕНЕНИЯ СИСТЕМЫ)
+        cat > audio_optimization_recommendations.sh << 'EOF'
 #!/bin/bash
-# PulseAudio оптимизации
+# РЕКОМЕНДАЦИИ по оптимизации PulseAudio
+# ВНИМАНИЕ: Этот скрипт НЕ изменяет системные настройки!
 
-# Уменьшение латентности
-pactl set-default-sink-latency 20000
-pactl set-default-source-latency 20000
-
-# Настройка буферов
-echo "default-fragments = 4" >> ~/.pulse/daemon.conf
-echo "default-fragment-size-msec = 5" >> ~/.pulse/daemon.conf
-
-# Перезапуск PulseAudio
-pulseaudio -k
-pulseaudio --start
-
-echo "PulseAudio оптимизирован"
+echo "🔊 РЕКОМЕНДАЦИИ ПО ОПТИМИЗАЦИИ PULSEAUDIO"
+echo "========================================"
+echo
+echo "Для улучшения звука в игре рекомендуется:"
+echo
+echo "1. Уменьшение латентности:"
+echo "   - Команда: pactl set-default-sink-latency 20000"
+echo "   - Команда: pactl set-default-source-latency 20000"
+echo
+echo "2. Настройка буферов в ~/.pulse/daemon.conf:"
+echo "   - default-fragments = 4"
+echo "   - default-fragment-size-msec = 5"
+echo
+echo "3. Перезапуск PulseAudio:"
+echo "   - pulseaudio -k && pulseaudio --start"
+echo
+echo "⚠️  ВНИМАНИЕ: Эти изменения могут повлиять на работу других приложений!"
+echo "⚠️  Применяйте их только если понимаете последствия!"
 EOF
         
     elif command -v pipewire &> /dev/null; then
         AUDIO_SYSTEM="PipeWire"
         
-        # PipeWire оптимизации
-        cat > audio_optimization.sh << 'EOF'
+        # Создание рекомендаций для PipeWire (БЕЗ ИЗМЕНЕНИЯ СИСТЕМЫ)
+        cat > audio_optimization_recommendations.sh << 'EOF'
 #!/bin/bash
-# PipeWire оптимизации
+# РЕКОМЕНДАЦИИ по оптимизации PipeWire
+# ВНИМАНИЕ: Этот скрипт НЕ изменяет системные настройки!
 
-# Настройка латентности
-mkdir -p ~/.config/pipewire
-cat > ~/.config/pipewire/pipewire.conf << 'PIPEWIRE_EOF'
-context.properties = {
-    default.clock.rate = 48000
-    default.clock.quantum = 1024
-    default.clock.min-quantum = 32
-    default.clock.max-quantum = 8192
-}
-PIPEWIRE_EOF
-
-systemctl --user restart pipewire
-
-echo "PipeWire оптимизирован"
+echo "🔊 РЕКОМЕНДАЦИИ ПО ОПТИМИЗАЦИИ PIPEWIRE"
+echo "======================================"
+echo
+echo "Для улучшения звука в игре рекомендуется:"
+echo
+echo "1. Создать конфигурацию в ~/.config/pipewire/pipewire.conf:"
+echo "   context.properties = {"
+echo "       default.clock.rate = 48000"
+echo "       default.clock.quantum = 1024"
+echo "       default.clock.min-quantum = 32"
+echo "       default.clock.max-quantum = 8192"
+echo "   }"
+echo
+echo "2. Перезапустить PipeWire:"
+echo "   - systemctl --user restart pipewire"
+echo
+echo "⚠️  ВНИМАНИЕ: Эти изменения могут повлиять на работу других приложений!"
+echo "⚠️  Применяйте их только если понимаете последствия!"
 EOF
         
     else

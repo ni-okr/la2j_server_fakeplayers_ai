@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"/home/ni/Projects/la2bots/modern_client/Source/ModernLineage2/ModernLineage2.Build.cs",
+		"/home/ni/Projects/la2bots/modern_client/Plugins/AdultContent/Source/AdultContent/AdultContent.Build.cs",
+		"/home/ni/Projects/la2bots/modern_client/Source/ModernLineage2.Target.cs",
+		"/home/ni/Projects/la2bots/modern_client/Source/ModernLineage2Editor.Target.cs"
+	],
+	"EngineVersion": "5.6.1"
+}

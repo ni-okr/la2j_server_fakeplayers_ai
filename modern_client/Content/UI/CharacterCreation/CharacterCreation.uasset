@@ -1,0 +1,3 @@
+# CharacterCreation Blueprint
+# Elements: RaceSelection, GenderSelection, ClassSelection, AppearanceSettings, NameInput, CharacterPreview, CreateButton, CancelButton
+# Style: customization_panel

@@ -1,0 +1,3 @@
+# GameInterface Blueprint
+# Elements: HPBar, MPBar, EXPBar, SkillsPanel, InventoryPanel, MinimapPanel, ChatPanel, QuickAccessButtons, GameMenu
+# Style: classic_mmorpg_layout

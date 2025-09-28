@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Adventurer Guild System",
+	"Description": "Advanced adventurer guild system for Modern Lineage II",
+	"Category": "Game Features",
+	"CreatedBy": "Modern Lineage II Development Team",
+	"CanContainContent": true,
+	"Modules": [
+		{
+			"Name": "AdventurerGuild",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
+

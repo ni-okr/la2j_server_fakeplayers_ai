@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ModernLineage2",
+			"Path": "../Source/ModernLineage2.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ModernLineage2Editor",
+			"Path": "../Source/ModernLineage2Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

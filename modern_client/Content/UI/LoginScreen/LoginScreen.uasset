@@ -1,0 +1,3 @@
+# LoginScreen Blueprint
+# Elements: BackgroundImage, LoginField, PasswordField, LoginButton, RegisterButton, SettingsButton
+# Style: dark_fantasy_theme

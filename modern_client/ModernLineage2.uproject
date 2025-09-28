@@ -1,68 +1,10 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.27",
+	"EngineAssociation": "5.6",
 	"Category": "",
-	"Description": "Modern Lineage II Client - Deobfuscated and Enhanced",
-	"Modules": [
-		{
-			"Name": "ModernLineage2",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine",
-				"CoreUObject",
-				"UMG",
-				"Slate",
-				"SlateCore",
-				"InputCore",
-				"HeadMountedDisplay",
-				"NavigationSystem",
-				"AIModule",
-				"GameplayTasks",
-				"OnlineSubsystem",
-				"OnlineSubsystemUtils",
-				"Networking",
-				"Sockets",
-				"HTTP",
-				"Json",
-				"JsonUtilities"
-			]
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "AdultContent",
-			"Enabled": true,
-			"MarketplaceURL": "",
-			"SupportedTargetPlatforms": [
-				"Linux"
-			]
-		},
-		{
-			"Name": "CostumeSystem",
-			"Enabled": true,
-			"MarketplaceURL": "",
-			"SupportedTargetPlatforms": [
-				"Linux"
-			]
-		},
-		{
-			"Name": "SlaveTrading",
-			"Enabled": true,
-			"MarketplaceURL": "",
-			"SupportedTargetPlatforms": [
-				"Linux"
-			]
-		},
-		{
-			"Name": "AdventurerGuild",
-			"Enabled": true,
-			"MarketplaceURL": "",
-			"SupportedTargetPlatforms": [
-				"Linux"
-			]
-		}
-	],
+	"Description": "Modern Lineage II Client - Blueprint Only",
+	"Modules": [],
+	"Plugins": [],
 	"TargetPlatforms": [
 		"Linux"
 	]
