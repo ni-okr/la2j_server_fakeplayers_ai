@@ -11,6 +11,10 @@
 #include "ClassSelectionSystem.cpp"
 #include "CharacterCustomizationSystem.cpp"
 #include "CharacterValidationSystem.cpp"
+#include "CharacterCreationFontSetup.cpp"
+#include "CharacterCreationAnimationSystem.cpp"
+#include "CharacterCreationVisualEffects.cpp"
+#include "CharacterCreationRealtimeValidation.cpp"
 
 UCharacterCreationScreen::UCharacterCreationScreen(const FObjectInitializer& ObjectInitializer)
     : Super(ObjectInitializer)
@@ -56,6 +60,12 @@ void UCharacterCreationScreen::InitializeCharacterCreation()
     FClassSelectionSystem::InitializeClassSelection(this);
     FCharacterCustomizationSystem::InitializeCustomization(this);
     FCharacterValidationSystem::InitializeValidation(this);
+
+    // Инициализация систем точной настройки
+    FCharacterCreationFontSetup::InitializeFontSetup(this);
+    FCharacterCreationAnimationSystem::InitializeAnimationSystem(this);
+    FCharacterCreationVisualEffects::InitializeVisualEffects(this);
+    FCharacterCreationRealtimeValidation::InitializeRealtimeValidation(this);
 
     // Настройка панелей выбора
     SetupRaceSelection();
