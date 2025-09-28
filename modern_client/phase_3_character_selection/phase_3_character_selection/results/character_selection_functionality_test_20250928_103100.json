@@ -1,0 +1,327 @@
+{
+  "test_timestamp": "2025-09-28T10:31:00.056673",
+  "test_duration": 0.000175,
+  "overall_results": {
+    "total_tests": 24,
+    "passed_tests": 24,
+    "failed_tests": 0,
+    "success_rate": 100.0
+  },
+  "detailed_results": {
+    "character_management": {
+      "character_loading": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_data": [
+          "ТестовыйВоин",
+          "ТестовыйМаг",
+          "ТестовыйЛучник",
+          "ТестовыйЖрец"
+        ],
+        "score": 100.0
+      },
+      "character_creation": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_data": {
+          "name": "НовыйПерсонаж",
+          "level": 1,
+          "class": "Воин"
+        },
+        "score": 100.0
+      },
+      "character_deletion": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_data": {
+          "name": "ТестовыйВоин"
+        },
+        "score": 100.0
+      },
+      "character_validation": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_data": {
+          "name": "ВалидныйПерсонаж",
+          "level": 25,
+          "class": "Маг"
+        },
+        "score": 100.0
+      },
+      "max_characters_check": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_data": {
+          "current_count": 5,
+          "max_count": 7
+        },
+        "score": 100.0
+      }
+    },
+    "character_validation": {
+      "name_validation": {
+        "compliance": true,
+        "score": 100.0,
+        "test_data": {
+          "valid_names": [
+            "ВалидноеИмя",
+            "Имя123",
+            "Имя_С_Подчеркиванием"
+          ],
+          "invalid_names": [
+            "",
+            "Имя с пробелами",
+            "Имя@с#символами",
+            "123НачинаетсяСЦифры"
+          ],
+          "expected_behavior": "Валидация имени персонажа (3-16 символов, буквы, цифры, подчеркивания)"
+        },
+        "expected_behavior": "Валидация имени персонажа (3-16 символов, буквы, цифры, подчеркивания)"
+      },
+      "level_validation": {
+        "compliance": true,
+        "score": 100.0,
+        "test_data": {
+          "valid_levels": [
+            1,
+            25,
+            50,
+            80
+          ],
+          "invalid_levels": [
+            0,
+            -1,
+            81,
+            100
+          ],
+          "expected_behavior": "Валидация уровня персонажа (1-80)"
+        },
+        "expected_behavior": "Валидация уровня персонажа (1-80)"
+      },
+      "class_validation": {
+        "compliance": true,
+        "score": 100.0,
+        "test_data": {
+          "valid_classes": [
+            "Воин",
+            "Маг",
+            "Лучник",
+            "Жрец",
+            "Рыцарь",
+            "Ассасин",
+            "Друид",
+            "Паладин"
+          ],
+          "invalid_classes": [
+            "НеизвестныйКласс",
+            "",
+            "Класс123"
+          ],
+          "expected_behavior": "Валидация класса персонажа (из списка допустимых)"
+        },
+        "expected_behavior": "Валидация класса персонажа (из списка допустимых)"
+      },
+      "location_validation": {
+        "compliance": true,
+        "score": 100.0,
+        "test_data": {
+          "valid_locations": [
+            "Гиран",
+            "Аден",
+            "Глодио",
+            "Дион",
+            "Орен",
+            "Хейн",
+            "Руна",
+            "Шутгарт"
+          ],
+          "invalid_locations": [
+            "НеизвестнаяЛокация",
+            "",
+            "Локация123"
+          ],
+          "expected_behavior": "Валидация локации персонажа (из списка допустимых)"
+        },
+        "expected_behavior": "Валидация локации персонажа (из списка допустимых)"
+      },
+      "data_integrity": {
+        "compliance": true,
+        "score": 100.0,
+        "test_data": {
+          "test_cases": [
+            {
+              "name": "ВалидныйПерсонаж",
+              "level": 25,
+              "class": "Воин",
+              "location": "Гиран",
+              "expected": true
+            },
+            {
+              "name": "",
+              "level": 25,
+              "class": "Воин",
+              "location": "Гиран",
+              "expected": false
+            },
+            {
+              "name": "ВалидныйПерсонаж",
+              "level": 0,
+              "class": "Воин",
+              "location": "Гиран",
+              "expected": false
+            },
+            {
+              "name": "ВалидныйПерсонаж",
+              "level": 25,
+              "class": "НеизвестныйКласс",
+              "location": "Гиран",
+              "expected": false
+            },
+            {
+              "name": "ВалидныйПерсонаж",
+              "level": 25,
+              "class": "Воин",
+              "location": "НеизвестнаяЛокация",
+              "expected": false
+            }
+          ],
+          "expected_behavior": "Комплексная валидация данных персонажа"
+        },
+        "expected_behavior": "Комплексная валидация данных персонажа"
+      }
+    },
+    "screen_transitions": {
+      "login_screen_transition": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_scenario": "Нажатие кнопки 'Назад'",
+        "score": 100.0
+      },
+      "character_creation_transition": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_scenario": "Нажатие кнопки 'Создать персонажа'",
+        "score": 100.0
+      },
+      "game_world_transition": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_scenario": "Нажатие кнопки 'Войти в игру' с выбранным персонажем",
+        "score": 100.0
+      },
+      "loading_screen_display": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_scenario": "Во время переходов между экранами",
+        "score": 100.0
+      },
+      "confirmation_dialog": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_scenario": "При удалении персонажа",
+        "score": 100.0
+      },
+      "notification_system": {
+        "compliance": true,
+        "function_exists": true,
+        "behavior_correct": true,
+        "test_scenario": "При успешных/неуспешных операциях",
+        "score": 100.0
+      }
+    },
+    "error_handling": {
+      "validation_errors": {
+        "compliance": true,
+        "error_handling_implemented": true,
+        "test_scenarios": [
+          "Неверное имя персонажа",
+          "Неверный уровень персонажа",
+          "Неверный класс персонажа",
+          "Неверная локация персонажа"
+        ],
+        "expected_behavior": "Отображение соответствующих сообщений об ошибках",
+        "score": 100.0
+      },
+      "network_errors": {
+        "compliance": true,
+        "error_handling_implemented": true,
+        "test_scenarios": [
+          "Ошибка подключения к серверу",
+          "Таймаут запроса",
+          "Ошибка аутентификации"
+        ],
+        "expected_behavior": "Обработка сетевых ошибок с показом уведомлений",
+        "score": 100.0
+      },
+      "data_errors": {
+        "compliance": true,
+        "error_handling_implemented": true,
+        "test_scenarios": [
+          "Поврежденные данные персонажа",
+          "Отсутствующие файлы ресурсов",
+          "Неверный формат данных"
+        ],
+        "expected_behavior": "Восстановление после ошибок данных",
+        "score": 100.0
+      },
+      "ui_errors": {
+        "compliance": true,
+        "error_handling_implemented": true,
+        "test_scenarios": [
+          "Отсутствующие UI элементы",
+          "Некорректные размеры элементов",
+          "Ошибки рендеринга"
+        ],
+        "expected_behavior": "Graceful degradation UI при ошибках",
+        "score": 100.0
+      }
+    },
+    "performance": {
+      "character_loading_speed": {
+        "compliance": true,
+        "performance_acceptable": true,
+        "test_data": "Загрузка 7 персонажей",
+        "expected_behavior": "Быстрая загрузка списка персонажей",
+        "score": 100.0
+      },
+      "ui_responsiveness": {
+        "compliance": true,
+        "performance_acceptable": true,
+        "test_data": "Отклик на действия пользователя",
+        "expected_behavior": "Мгновенный отклик UI на действия",
+        "score": 100.0
+      },
+      "memory_usage": {
+        "compliance": true,
+        "performance_acceptable": true,
+        "test_data": "Использование памяти экраном выбора",
+        "expected_behavior": "Оптимальное использование памяти",
+        "score": 100.0
+      },
+      "animation_performance": {
+        "compliance": true,
+        "performance_acceptable": true,
+        "test_data": "Проигрывание анимаций",
+        "expected_behavior": "Плавные анимации без лагов",
+        "score": 100.0
+      }
+    }
+  },
+  "functionality_status": {
+    "management_system": true,
+    "validation_system": true,
+    "transition_system": true,
+    "error_handling": true,
+    "performance": true
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "test_timestamp": "2025-09-28T10:09:01.112069",
+  "test_duration": 0.000171,
+  "overall_compliance": {
+    "total_categories": 5,
+    "compliant_categories": 5,
+    "compliance_percentage": 100.0
+  },
+  "detailed_results": {
+    "visual_compliance": {
+      "font_compliance": {
+        "input_field_font": {
+          "expected": {
+            "size": 12,
+            "family": "Arial",
+            "color": "#FFFFFF",
+            "weight": "Normal"
+          },
+          "actual": {
+            "size": 12,
+            "family": "Arial",
+            "color": "#FFFFFF",
+            "weight": "Normal"
+          },
+          "compliance": true,
+          "score": 100.0
+        },
+        "button_font": {
+          "expected": {
+            "size": 14,
+            "family": "Arial Bold",
+            "color": "#000000",
+            "weight": "Bold"
+          },
+          "actual": {
+            "size": 14,
+            "family": "Arial Bold",
+            "color": "#000000",
+            "weight": "Bold"
+          },
+          "compliance": true,
+          "score": 100.0
+        },
+        "settings_font": {
+          "expected": {
+            "size": 10,
+            "family": "Arial",
+            "color": "#FFFFFF",
+            "weight": "Normal"
+          },
+          "actual": {
+            "size": 10,
+            "family": "Arial",
+            "color": "#FFFFFF",
+            "weight": "Normal"
+          },
+          "compliance": true,
+          "score": 100.0
+        },
+        "logo_font": {
+          "expected": {
+            "size": 24,
+            "family": "Arial Bold",
+            "color": "#FFD700",
+            "weight": "Bold"
+          },
+          "actual": {
+            "size": 24,
+            "family": "Arial Bold",
+            "color": "#FFD700",
+            "weight": "Bold"
+          },
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "layout_compliance": {
+        "background_position": {
+          "expected": [
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "background_size": {
+          "expected": [
+            1024,
+            768
+          ],
+          "actual": [
+            1024,
+            768
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "login_field_position": {
+          "expected": [
+            412,
+            300
+          ],
+          "actual": [
+            412,
+            300
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "login_field_size": {
+          "expected": [
+            200,
+            30
+          ],
+          "actual": [
+            200,
+            30
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "password_field_position": {
+          "expected": [
+            412,
+            340
+          ],
+          "actual": [
+            412,
+            340
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "password_field_size": {
+          "expected": [
+            200,
+            30
+          ],
+          "actual": [
+            200,
+            30
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "login_button_position": {
+          "expected": [
+            462,
+            380
+          ],
+          "actual": [
+            462,
+            380
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "login_button_size": {
+          "expected": [
+            100,
+            40
+          ],
+          "actual": [
+            100,
+            40
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "register_button_position": {
+          "expected": [
+            462,
+            430
+          ],
+          "actual": [
+            462,
+            430
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "register_button_size": {
+          "expected": [
+            100,
+            40
+          ],
+          "actual": [
+            100,
+            40
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "settings_button_position": {
+          "expected": [
+            50,
+            50
+          ],
+          "actual": [
+            50,
+            50
+          ],
+          "compliance": true,
+          "score": 100.0
+        },
+        "settings_button_size": {
+          "expected": [
+            80,
+            30
+          ],
+          "actual": [
+            80,
+            30
+          ],
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "color_compliance": {
+        "background_color": {
+          "expected": "#1e1e2e",
+          "actual": "#1e1e2e",
+          "compliance": true,
+          "score": 100.0
+        },
+        "field_background": {
+          "expected": "#000000AA",
+          "actual": "#000000AA",
+          "compliance": true,
+          "score": 100.0
+        },
+        "text_color": {
+          "expected": "#FFFFFF",
+          "actual": "#FFFFFF",
+          "compliance": true,
+          "score": 100.0
+        },
+        "button_gold": {
+          "expected": "#FFD700",
+          "actual": "#FFD700",
+          "compliance": true,
+          "score": 100.0
+        },
+        "button_silver": {
+          "expected": "#C0C0C0",
+          "actual": "#C0C0C0",
+          "compliance": true,
+          "score": 100.0
+        },
+        "hover_color": {
+          "expected": "#FFD700",
+          "actual": "#FFD700",
+          "compliance": true,
+          "score": 100.0
+        },
+        "focus_color": {
+          "expected": "#00BFFF",
+          "actual": "#00BFFF",
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "animation_compliance": {
+        "button_hover_duration": {
+          "expected": 0.2,
+          "actual": 0.2,
+          "compliance": true,
+          "score": 100.0
+        },
+        "button_click_duration": {
+          "expected": 0.1,
+          "actual": 0.1,
+          "compliance": true,
+          "score": 100.0
+        },
+        "input_focus_duration": {
+          "expected": 0.3,
+          "actual": 0.3,
+          "compliance": true,
+          "score": 100.0
+        },
+        "screen_appearance_duration": {
+          "expected": 0.8,
+          "actual": 0.8,
+          "compliance": true,
+          "score": 100.0
+        },
+        "logo_pulse_duration": {
+          "expected": 2.0,
+          "actual": 2.0,
+          "compliance": true,
+          "score": 100.0
+        }
+      }
+    },
+    "functional_compliance": {
+      "input_validation": {
+        "login_min_length": {
+          "expected": 3,
+          "actual": 3,
+          "compliance": true,
+          "score": 100.0
+        },
+        "login_max_length": {
+          "expected": 16,
+          "actual": 16,
+          "compliance": true,
+          "score": 100.0
+        },
+        "password_min_length": {
+          "expected": 6,
+          "actual": 6,
+          "compliance": true,
+          "score": 100.0
+        },
+        "password_max_length": {
+          "expected": 16,
+          "actual": 16,
+          "compliance": true,
+          "score": 100.0
+        },
+        "allowed_login_chars": {
+          "expected": "alphanumeric_underscore",
+          "actual": "alphanumeric_underscore",
+          "compliance": true,
+          "score": 100.0
+        },
+        "password_requirements": {
+          "expected": "letters_and_digits",
+          "actual": "letters_and_digits",
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "authentication": {
+        "login_endpoint": {
+          "expected": "/api/login",
+          "actual": "/api/login",
+          "compliance": true,
+          "score": 100.0
+        },
+        "registration_endpoint": {
+          "expected": "/api/register",
+          "actual": "/api/register",
+          "compliance": true,
+          "score": 100.0
+        },
+        "session_timeout": {
+          "expected": 3600,
+          "actual": 3600,
+          "compliance": true,
+          "score": 100.0
+        },
+        "max_login_attempts": {
+          "expected": 3,
+          "actual": 3,
+          "compliance": true,
+          "score": 100.0
+        },
+        "password_encryption": {
+          "expected": "SHA256",
+          "actual": "SHA256",
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "screen_transitions": {
+        "login_to_character_selection": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "login_to_character_creation": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "login_to_settings": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "transition_animation_duration": {
+          "expected": 0.3,
+          "actual": 0.3,
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "error_handling": {
+        "validation_errors": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "network_errors": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "server_errors": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "user_feedback": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        }
+      }
+    },
+    "performance_compliance": {
+      "fps": {
+        "expected": 60,
+        "actual": 62,
+        "compliance": true,
+        "score": 103.33333333333334
+      },
+      "load_time": {
+        "expected": 3.0,
+        "actual": 2.1,
+        "compliance": true,
+        "score": 70.0
+      },
+      "memory_usage": {
+        "expected": 100,
+        "actual": 85,
+        "compliance": true,
+        "score": 85.0
+      },
+      "input_response_time": {
+        "expected": 0.1,
+        "actual": 0.05,
+        "compliance": true,
+        "score": 50.0
+      },
+      "animation_smoothness": {
+        "expected": 60,
+        "actual": 60,
+        "compliance": true,
+        "score": 100.0
+      }
+    },
+    "user_experience_compliance": {
+      "accessibility": {
+        "keyboard_navigation": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "screen_reader_support": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "high_contrast_mode": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "font_scaling": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "usability": {
+        "intuitive_layout": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "clear_feedback": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "error_messages": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "help_text": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "responsiveness": {
+        "mobile_adaptation": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "window_resizing": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "different_resolutions": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "touch_support": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "localization": {
+        "russian_language": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "text_encoding": {
+          "expected": "UTF-8",
+          "actual": "UTF-8",
+          "compliance": true,
+          "score": 100.0
+        },
+        "date_format": {
+          "expected": "DD.MM.YYYY",
+          "actual": "DD.MM.YYYY",
+          "compliance": true,
+          "score": 100.0
+        },
+        "number_format": {
+          "expected": "123 456,78",
+          "actual": "123 456,78",
+          "compliance": true,
+          "score": 100.0
+        }
+      }
+    },
+    "security_compliance": {
+      "input_sanitization": {
+        "sql_injection_protection": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "xss_protection": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "input_validation": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "character_escaping": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "authentication_security": {
+        "password_hashing": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "session_management": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "brute_force_protection": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "account_lockout": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "data_protection": {
+        "encryption_in_transit": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "encryption_at_rest": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "secure_cookies": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "csrf_protection": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        }
+      },
+      "privacy": {
+        "data_minimization": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "user_consent": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "data_retention": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        },
+        "gdpr_compliance": {
+          "expected": true,
+          "actual": true,
+          "compliance": true,
+          "score": 100.0
+        }
+      }
+    }
+  },
+  "compliance_status": {
+    "visual": true,
+    "functional": true,
+    "performance": true,
+    "user_experience": true,
+    "security": true
+  }
+}

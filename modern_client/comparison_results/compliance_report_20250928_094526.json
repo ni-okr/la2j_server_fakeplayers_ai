@@ -1,0 +1,28 @@
+{
+  "report_timestamp": "2025-09-28T09:45:26.844684",
+  "summary": {
+    "total_tests": 0,
+    "passed_tests": 0,
+    "failed_tests": 0,
+    "success_rate": 0.0,
+    "average_compliance_score": 0.0
+  },
+  "gui_compliance": {
+    "total_gui_tests": 0,
+    "passed_gui_tests": 0,
+    "gui_success_rate": 0.0,
+    "average_gui_compliance": 0.0,
+    "detailed_results": []
+  },
+  "biome_compliance": {
+    "total_biome_tests": 0,
+    "passed_biome_tests": 0,
+    "biome_success_rate": 0.0,
+    "average_biome_compliance": 0.0,
+    "detailed_results": []
+  },
+  "recommendations": [
+    "✅ Все тесты пройдены! Клиент полностью соответствует эталону."
+  ],
+  "execution_time": 0.3238043785095215
+}

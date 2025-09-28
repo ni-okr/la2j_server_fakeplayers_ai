@@ -1,0 +1,88 @@
+{
+  "gui_screenshots": {
+    "login_screen": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/login_screen.png",
+    "character_selection": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/character_selection.png",
+    "character_creation": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/character_creation.png",
+    "game_interface": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/game_interface.png"
+  },
+  "biome_screenshots": {
+    "talking_island": {
+      "newbie_village": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/talking_island/newbie_village.png",
+      "temple_ruins": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/talking_island/temple_ruins.png",
+      "elven_ruins": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/talking_island/elven_ruins.png",
+      "orc_barracks": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/talking_island/orc_barracks.png",
+      "school_of_dark_arts": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/talking_island/school_of_dark_arts.png"
+    },
+    "elven_village": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/elven_village/town_center.png",
+      "elven_temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/elven_village/elven_temple.png",
+      "magic_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/elven_village/magic_shop.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/elven_village/weapon_shop.png",
+      "grocery_store": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/elven_village/grocery_store.png"
+    },
+    "dark_elven_village": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dark_elven_village/town_center.png",
+      "dark_temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dark_elven_village/dark_temple.png",
+      "magic_guild": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dark_elven_village/magic_guild.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dark_elven_village/weapon_shop.png",
+      "armor_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dark_elven_village/armor_shop.png"
+    },
+    "orc_village": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/orc_village/town_center.png",
+      "orc_temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/orc_village/orc_temple.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/orc_village/weapon_shop.png",
+      "armor_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/orc_village/armor_shop.png",
+      "grocery_store": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/orc_village/grocery_store.png"
+    },
+    "dwarven_village": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dwarven_village/town_center.png",
+      "dwarven_temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dwarven_village/dwarven_temple.png",
+      "blacksmith": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dwarven_village/blacksmith.png",
+      "magic_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dwarven_village/magic_shop.png",
+      "warehouse": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dwarven_village/warehouse.png"
+    },
+    "gludin_village": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludin_village/town_center.png",
+      "temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludin_village/temple.png",
+      "magic_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludin_village/magic_shop.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludin_village/weapon_shop.png",
+      "armor_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludin_village/armor_shop.png"
+    },
+    "gludio_castle_town": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludio_castle_town/town_center.png",
+      "castle": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludio_castle_town/castle.png",
+      "temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludio_castle_town/temple.png",
+      "magic_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludio_castle_town/magic_shop.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/gludio_castle_town/weapon_shop.png"
+    },
+    "dion_castle_town": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dion_castle_town/town_center.png",
+      "castle": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dion_castle_town/castle.png",
+      "temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dion_castle_town/temple.png",
+      "magic_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dion_castle_town/magic_shop.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/dion_castle_town/weapon_shop.png"
+    },
+    "giran_castle_town": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/giran_castle_town/town_center.png",
+      "castle": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/giran_castle_town/castle.png",
+      "temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/giran_castle_town/temple.png",
+      "magic_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/giran_castle_town/magic_shop.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/giran_castle_town/weapon_shop.png"
+    },
+    "oren_castle_town": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/oren_castle_town/town_center.png",
+      "castle": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/oren_castle_town/castle.png",
+      "temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/oren_castle_town/temple.png",
+      "magic_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/oren_castle_town/magic_shop.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/oren_castle_town/weapon_shop.png"
+    },
+    "aden_castle_town": {
+      "town_center": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/aden_castle_town/town_center.png",
+      "castle": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/aden_castle_town/castle.png",
+      "temple": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/aden_castle_town/temple.png",
+      "magic_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/aden_castle_town/magic_shop.png",
+      "weapon_shop": "/home/ni/Projects/la2bots/modern_client/reference_screenshots/aden_castle_town/weapon_shop.png"
+    }
+  },
+  "capture_timestamp": "2025-09-28T09:45:26.520920"
+}

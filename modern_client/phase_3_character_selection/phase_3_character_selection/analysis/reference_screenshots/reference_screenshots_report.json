@@ -1,0 +1,35 @@
+{
+  "generation_timestamp": "2025-09-28T10:35:47.732772",
+  "generation_duration": 0.035119,
+  "generated_screenshots": [
+    {
+      "name": "empty_character_selection",
+      "path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/analysis/reference_screenshots/reference_character_selection_empty.png",
+      "description": "Пустой экран выбора персонажей"
+    },
+    {
+      "name": "character_selection_with_characters",
+      "path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/analysis/reference_screenshots/reference_character_selection_with_characters.png",
+      "description": "Экран выбора персонажей с персонажами"
+    },
+    {
+      "name": "max_characters_selection",
+      "path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/analysis/reference_screenshots/reference_character_selection_max_characters.png",
+      "description": "Экран выбора персонажей с максимальным количеством персонажей"
+    }
+  ],
+  "screenshot_specifications": {
+    "resolution": "1024x768",
+    "background_color": "#1e1e2e",
+    "panel_color": "#1e1e2e",
+    "panel_border_color": "#FFD700",
+    "character_slot_color": "#2d2d2d",
+    "character_slot_border_color": "#FFD700",
+    "button_colors": {
+      "create": "#00FF00",
+      "delete": "#FF0000",
+      "enter": "#FFD700",
+      "back": "#FFFFFF"
+    }
+  }
+}

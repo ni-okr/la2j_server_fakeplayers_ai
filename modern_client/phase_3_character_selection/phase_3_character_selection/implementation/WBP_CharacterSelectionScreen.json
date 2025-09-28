@@ -1,0 +1,105 @@
+{
+    "WidgetName": "WBP_CharacterSelectionScreen",
+    "ParentClass": "CharacterSelectionScreen",
+    "Components": [
+        {
+            "Type": "CanvasPanel",
+            "Name": "RootCanvas"
+        },
+        {
+            "Type": "Image",
+            "Name": "BackgroundImage",
+            "Parent": "RootCanvas",
+            "Anchors": "Full",
+            "ZOrder": -1
+        },
+        {
+            "Type": "ScrollBox",
+            "Name": "CharacterListPanel",
+            "Parent": "RootCanvas",
+            "Position": "LeftCenter",
+            "Size": "400x500"
+        },
+        {
+            "Type": "Button",
+            "Name": "CreateCharacterButton",
+            "Parent": "RootCanvas",
+            "Position": "BottomLeft",
+            "Size": "150x40",
+            "Text": "Создать персонажа"
+        },
+        {
+            "Type": "Button",
+            "Name": "DeleteCharacterButton",
+            "Parent": "RootCanvas",
+            "Position": "BottomCenter",
+            "Size": "150x40",
+            "Text": "Удалить персонажа"
+        },
+        {
+            "Type": "Button",
+            "Name": "EnterGameButton",
+            "Parent": "RootCanvas",
+            "Position": "BottomRight",
+            "Size": "150x40",
+            "Text": "Войти в игру"
+        },
+        {
+            "Type": "Button",
+            "Name": "BackButton",
+            "Parent": "RootCanvas",
+            "Position": "TopLeft",
+            "Size": "100x30",
+            "Text": "Назад"
+        }
+    ],
+    "CharacterSlotTemplate": {
+        "WidgetName": "WBP_CharacterSlot",
+        "Components": [
+            {
+                "Type": "Button",
+                "Name": "SlotButton",
+                "Anchors": "Full"
+            },
+            {
+                "Type": "Image",
+                "Name": "CharacterAvatar",
+                "Parent": "SlotButton",
+                "Position": "Left",
+                "Size": "60x60"
+            },
+            {
+                "Type": "TextBlock",
+                "Name": "CharacterName",
+                "Parent": "SlotButton",
+                "Position": "CenterTop",
+                "Size": "200x20",
+                "Text": "Имя персонажа"
+            },
+            {
+                "Type": "TextBlock",
+                "Name": "CharacterLevel",
+                "Parent": "SlotButton",
+                "Position": "CenterMiddle",
+                "Size": "200x15",
+                "Text": "Уровень 1"
+            },
+            {
+                "Type": "TextBlock",
+                "Name": "CharacterClass",
+                "Parent": "SlotButton",
+                "Position": "CenterBottom",
+                "Size": "200x15",
+                "Text": "Класс"
+            },
+            {
+                "Type": "TextBlock",
+                "Name": "CharacterLocation",
+                "Parent": "SlotButton",
+                "Position": "Right",
+                "Size": "100x15",
+                "Text": "Локация"
+            }
+        ]
+    }
+}

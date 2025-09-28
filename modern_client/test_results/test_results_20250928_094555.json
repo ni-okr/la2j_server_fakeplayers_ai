@@ -1,0 +1,656 @@
+{
+  "test_suite_start": "2025-09-28T09:45:28.970810",
+  "gui_test_results": [
+    {
+      "test_name": "login_screen_layout",
+      "scenario": "login_screen_tests",
+      "description": "Проверка расположения элементов экрана входа",
+      "start_time": "2025-09-28T09:45:28.970934",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Запустить клиент",
+          "success": true,
+          "error": null,
+          "execution_time": 1.000112771987915
+        },
+        {
+          "step_index": 1,
+          "step_description": "Дождаться загрузки экрана входа",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20033693313598633
+        },
+        {
+          "step_index": 2,
+          "step_description": "Сделать скриншот",
+          "success": true,
+          "error": null,
+          "execution_time": 0.0001709461212158203,
+          "screenshot_path": "/home/ni/Projects/la2bots/modern_client/test_results/login_screen_layout_step2_20250928_094530.png"
+        },
+        {
+          "step_index": 3,
+          "step_description": "Сравнить с эталонным скриншотом",
+          "success": true,
+          "error": null,
+          "execution_time": 0.0006787776947021484,
+          "compliance_score": 81.44004369143161
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 81.44004369143161,
+      "execution_time": 1.2013325691223145,
+      "end_time": "2025-09-28T09:45:30.172266"
+    },
+    {
+      "test_name": "login_field_functionality",
+      "scenario": "login_screen_tests",
+      "description": "Проверка функциональности поля логина",
+      "start_time": "2025-09-28T09:45:30.172359",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Кликнуть на поле логина",
+          "success": true,
+          "error": null,
+          "execution_time": 0.5002338886260986
+        },
+        {
+          "step_index": 1,
+          "step_description": "Ввести тестовый текст",
+          "success": true,
+          "error": null,
+          "execution_time": 0.5002098083496094
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить отображение текста",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20029854774475098
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить активность поля",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20029354095458984
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 1.401073932647705,
+      "end_time": "2025-09-28T09:45:31.573434"
+    },
+    {
+      "test_name": "password_field_functionality",
+      "scenario": "login_screen_tests",
+      "description": "Проверка функциональности поля пароля",
+      "start_time": "2025-09-28T09:45:31.573559",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Кликнуть на поле пароля",
+          "success": true,
+          "error": null,
+          "execution_time": 0.5001561641693115
+        },
+        {
+          "step_index": 1,
+          "step_description": "Ввести тестовый пароль",
+          "success": true,
+          "error": null,
+          "execution_time": 0.5002837181091309
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить скрытие символов",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20029258728027344
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить активность поля",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20029997825622559
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 1.4010698795318604,
+      "end_time": "2025-09-28T09:45:32.974630"
+    },
+    {
+      "test_name": "login_button_functionality",
+      "scenario": "login_screen_tests",
+      "description": "Проверка функциональности кнопки входа",
+      "start_time": "2025-09-28T09:45:32.974748",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Ввести корректные данные",
+          "success": true,
+          "error": null,
+          "execution_time": 0.5002279281616211
+        },
+        {
+          "step_index": 1,
+          "step_description": "Кликнуть кнопку 'Войти'",
+          "success": true,
+          "error": null,
+          "execution_time": 0.5002932548522949
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить переход к следующему экрану",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20029139518737793
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить анимацию кнопки",
+          "success": true,
+          "error": null,
+          "execution_time": 0.200272798538208
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 1.4011216163635254,
+      "end_time": "2025-09-28T09:45:34.375871"
+    },
+    {
+      "test_name": "character_list_display",
+      "scenario": "character_selection_tests",
+      "description": "Проверка отображения списка персонажей",
+      "start_time": "2025-09-28T09:45:34.376040",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Открыть экран выбора персонажей",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20022821426391602
+        },
+        {
+          "step_index": 1,
+          "step_description": "Проверить отображение списка персонажей",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20029473304748535
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить информацию о каждом персонаже",
+          "success": true,
+          "error": null,
+          "execution_time": 0.2001817226409912
+        },
+        {
+          "step_index": 3,
+          "step_description": "Сравнить с эталонным отображением",
+          "success": true,
+          "error": null,
+          "execution_time": 0.00012183189392089844,
+          "compliance_score": 80.69531758030925
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 80.69531758030925,
+      "execution_time": 0.6008613109588623,
+      "end_time": "2025-09-28T09:45:34.976902"
+    },
+    {
+      "test_name": "character_3d_model",
+      "scenario": "character_selection_tests",
+      "description": "Проверка 3D модели персонажа",
+      "start_time": "2025-09-28T09:45:34.976966",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Выбрать персонажа из списка",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20022368431091309
+        },
+        {
+          "step_index": 1,
+          "step_description": "Проверить загрузку 3D модели",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20029664039611816
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить анимацию модели",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20024943351745605
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить качество отображения",
+          "success": true,
+          "error": null,
+          "execution_time": 0.2002260684967041
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 0.8010308742523193,
+      "end_time": "2025-09-28T09:45:35.777998"
+    },
+    {
+      "test_name": "race_selection",
+      "scenario": "character_creation_tests",
+      "description": "Проверка выбора расы персонажа",
+      "start_time": "2025-09-28T09:45:35.778166",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Открыть экран создания персонажа",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20014142990112305
+        },
+        {
+          "step_index": 1,
+          "step_description": "Проверить доступные расы",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20029616355895996
+        },
+        {
+          "step_index": 2,
+          "step_description": "Выбрать каждую расу поочередно",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20018815994262695
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить изменение 3D модели",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20023131370544434
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 0.8009181022644043,
+      "end_time": "2025-09-28T09:45:36.579086"
+    },
+    {
+      "test_name": "appearance_customization",
+      "scenario": "character_creation_tests",
+      "description": "Проверка настройки внешности",
+      "start_time": "2025-09-28T09:45:36.579204",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Выбрать расу и пол",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20018315315246582
+        },
+        {
+          "step_index": 1,
+          "step_description": "Изменить цвет волос",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20018887519836426
+        },
+        {
+          "step_index": 2,
+          "step_description": "Изменить прическу",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20020794868469238
+        },
+        {
+          "step_index": 3,
+          "step_description": "Изменить другие параметры внешности",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20020294189453125
+        },
+        {
+          "step_index": 4,
+          "step_description": "Проверить отображение изменений на 3D модели",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20019984245300293
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 1.0010402202606201,
+      "end_time": "2025-09-28T09:45:37.580245"
+    },
+    {
+      "test_name": "hp_mp_bars_display",
+      "scenario": "game_interface_tests",
+      "description": "Проверка отображения полосок HP/MP",
+      "start_time": "2025-09-28T09:45:37.580391",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Войти в игру",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20018959045410156
+        },
+        {
+          "step_index": 1,
+          "step_description": "Проверить отображение полоски здоровья",
+          "success": true,
+          "error": null,
+          "execution_time": 0.2002875804901123
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить отображение полоски маны",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20028305053710938
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить корректность значений",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20028471946716309
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 0.8010931015014648,
+      "end_time": "2025-09-28T09:45:38.381486"
+    },
+    {
+      "test_name": "skills_panel",
+      "scenario": "game_interface_tests",
+      "description": "Проверка панели скилов",
+      "start_time": "2025-09-28T09:45:38.381646",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Проверить отображение панели скилов",
+          "success": true,
+          "error": null,
+          "execution_time": 0.2001032829284668
+        },
+        {
+          "step_index": 1,
+          "step_description": "Проверить горячие клавиши",
+          "success": true,
+          "error": null,
+          "execution_time": 0.2002880573272705
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить иконки скилов",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20023131370544434
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить функциональность использования",
+          "success": true,
+          "error": null,
+          "execution_time": 0.2001800537109375
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 0.8008363246917725,
+      "end_time": "2025-09-28T09:45:39.182483"
+    },
+    {
+      "test_name": "minimap_display",
+      "scenario": "game_interface_tests",
+      "description": "Проверка миникарты",
+      "start_time": "2025-09-28T09:45:39.182631",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Проверить отображение миникарты",
+          "success": true,
+          "error": null,
+          "execution_time": 0.2001509666442871
+        },
+        {
+          "step_index": 1,
+          "step_description": "Проверить позицию игрока на карте",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20019936561584473
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить отображение других объектов",
+          "success": true,
+          "error": null,
+          "execution_time": 0.2002863883972168
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить функции масштабирования",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20028352737426758
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 0.8009541034698486,
+      "end_time": "2025-09-28T09:45:39.983586"
+    },
+    {
+      "test_name": "chat_system",
+      "scenario": "game_interface_tests",
+      "description": "Проверка системы чата",
+      "start_time": "2025-09-28T09:45:39.983700",
+      "status": "PASSED",
+      "steps_executed": [
+        {
+          "step_index": 0,
+          "step_description": "Проверить отображение окна чата",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20010852813720703
+        },
+        {
+          "step_index": 1,
+          "step_description": "Ввести тестовое сообщение",
+          "success": true,
+          "error": null,
+          "execution_time": 0.5002827644348145
+        },
+        {
+          "step_index": 2,
+          "step_description": "Проверить отправку сообщения",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20023870468139648
+        },
+        {
+          "step_index": 3,
+          "step_description": "Проверить каналы чата",
+          "success": true,
+          "error": null,
+          "execution_time": 0.20028924942016602
+        }
+      ],
+      "error_message": null,
+      "compliance_score": 95.0,
+      "execution_time": 1.1009643077850342,
+      "end_time": "2025-09-28T09:45:41.084666"
+    }
+  ],
+  "biome_test_results": [
+    {
+      "test_name": "talking_island_visuals",
+      "scenario": "biome_visual_tests",
+      "description": "Проверка визуалов Talking Island",
+      "start_time": "2025-09-28T09:45:41.084860",
+      "status": "PASSED",
+      "location_results": [
+        {
+          "location_name": "newbie_village",
+          "coordinates": [
+            10912,
+            12784,
+            -2926
+          ],
+          "compliance_score": 89.89777750704215,
+          "screenshot_path": "/home/ni/Projects/la2bots/modern_client/test_results/biome_newbie_village_20250928_094543.png",
+          "comparison_result": null
+        },
+        {
+          "location_name": "temple_ruins",
+          "coordinates": [
+            4560,
+            8804,
+            -3590
+          ],
+          "compliance_score": 93.35348321384903,
+          "screenshot_path": "/home/ni/Projects/la2bots/modern_client/test_results/biome_temple_ruins_20250928_094545.png",
+          "comparison_result": null
+        },
+        {
+          "location_name": "elven_ruins",
+          "coordinates": [
+            48736,
+            247840,
+            -6240
+          ],
+          "compliance_score": 89.88769478736226,
+          "screenshot_path": "/home/ni/Projects/la2bots/modern_client/test_results/biome_elven_ruins_20250928_094547.png",
+          "comparison_result": null
+        }
+      ],
+      "error_message": null,
+      "average_compliance_score": 91.04631850275115,
+      "execution_time": 6.001039028167725,
+      "end_time": "2025-09-28T09:45:47.085899"
+    },
+    {
+      "test_name": "town_centers_visuals",
+      "scenario": "biome_visual_tests",
+      "description": "Проверка визуалов центров городов",
+      "start_time": "2025-09-28T09:45:47.085943",
+      "status": "FAILED",
+      "location_results": [
+        {
+          "location_name": "elven_village_center",
+          "coordinates": [
+            46934,
+            51467,
+            -2977
+          ],
+          "compliance_score": 80.51142541875629,
+          "screenshot_path": "/home/ni/Projects/la2bots/modern_client/test_results/biome_elven_village_center_20250928_094549.png",
+          "comparison_result": null
+        },
+        {
+          "location_name": "dark_elven_village_center",
+          "coordinates": [
+            9745,
+            15606,
+            -4574
+          ],
+          "compliance_score": 77.3852823048544,
+          "screenshot_path": "/home/ni/Projects/la2bots/modern_client/test_results/biome_dark_elven_village_center_20250928_094551.png",
+          "comparison_result": null
+        },
+        {
+          "location_name": "orc_village_center",
+          "coordinates": [
+            -45186,
+            -112459,
+            -236
+          ],
+          "compliance_score": 78.87489441889308,
+          "screenshot_path": "/home/ni/Projects/la2bots/modern_client/test_results/biome_orc_village_center_20250928_094553.png",
+          "comparison_result": null
+        },
+        {
+          "location_name": "dwarven_village_center",
+          "coordinates": [
+            115113,
+            -178212,
+            -901
+          ],
+          "compliance_score": 80.87612737837227,
+          "screenshot_path": "/home/ni/Projects/la2bots/modern_client/test_results/biome_dwarven_village_center_20250928_094555.png",
+          "comparison_result": null
+        }
+      ],
+      "error_message": "Низкое соответствие: 79.4%",
+      "average_compliance_score": 79.41193238021901,
+      "execution_time": 8.001633882522583,
+      "end_time": "2025-09-28T09:45:55.087577"
+    },
+    {
+      "test_name": "npc_dialogue_system",
+      "scenario": "npc_interaction_tests",
+      "description": "Проверка системы диалогов с NPC",
+      "start_time": "2025-09-28T09:45:55.087653",
+      "status": "RUNNING",
+      "location_results": [],
+      "error_message": null,
+      "average_compliance_score": 0.0,
+      "execution_time": 3.5762786865234375e-06,
+      "end_time": "2025-09-28T09:45:55.087656"
+    },
+    {
+      "test_name": "shop_interface",
+      "scenario": "npc_interaction_tests",
+      "description": "Проверка интерфейса магазинов",
+      "start_time": "2025-09-28T09:45:55.087687",
+      "status": "RUNNING",
+      "location_results": [],
+      "error_message": null,
+      "average_compliance_score": 0.0,
+      "execution_time": 2.6226043701171875e-06,
+      "end_time": "2025-09-28T09:45:55.087690"
+    }
+  ],
+  "summary": {
+    "total_tests": 16,
+    "passed_tests": 13,
+    "failed_tests": 1,
+    "error_tests": 0,
+    "success_rate": 81.25,
+    "average_compliance_score": 91.61382943962222,
+    "gui_tests": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "biome_tests": {
+      "total": 4,
+      "passed": 1,
+      "failed": 1
+    }
+  },
+  "execution_time": 26.11696147918701,
+  "test_suite_end": "2025-09-28T09:45:55.087772"
+}

@@ -1,0 +1,180 @@
+{
+  "test_timestamp": "2025-09-28T10:36:49.688593",
+  "test_duration": 0.265069,
+  "overall_results": {
+    "total_tests": 3,
+    "passed_tests": 3,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "compliance_threshold": 95.0
+  },
+  "detailed_results": {
+    "character_selection_empty": {
+      "screenshot_name": "character_selection_empty",
+      "timestamp": "2025-09-28T10:36:49.520349",
+      "overall_comparison": {
+        "similarity_percentage": 99.97456868489584,
+        "pixel_differences": 200,
+        "total_pixels": 786432,
+        "similar_pixels": 786232,
+        "compliance": true,
+        "pixel_tolerance": 10,
+        "similarity_threshold": 95.0
+      },
+      "region_analysis": {
+        "background": {
+          "similarity_percentage": 99.97456868489584,
+          "pixel_differences": 200,
+          "total_pixels": 786432,
+          "compliance": true
+        },
+        "character_panel": {
+          "similarity_percentage": 99.95,
+          "pixel_differences": 100,
+          "total_pixels": 200000,
+          "compliance": true
+        },
+        "create_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "delete_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "enter_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "back_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 3000,
+          "compliance": true
+        }
+      },
+      "visualization_path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/results/comparison_visualization_character_selection_empty.png",
+      "compliance": true
+    },
+    "character_selection_with_characters": {
+      "screenshot_name": "character_selection_with_characters",
+      "timestamp": "2025-09-28T10:36:49.603588",
+      "overall_comparison": {
+        "similarity_percentage": 99.97456868489584,
+        "pixel_differences": 200,
+        "total_pixels": 786432,
+        "similar_pixels": 786232,
+        "compliance": true,
+        "pixel_tolerance": 10,
+        "similarity_threshold": 95.0
+      },
+      "region_analysis": {
+        "background": {
+          "similarity_percentage": 99.97456868489584,
+          "pixel_differences": 200,
+          "total_pixels": 786432,
+          "compliance": true
+        },
+        "character_panel": {
+          "similarity_percentage": 99.95,
+          "pixel_differences": 100,
+          "total_pixels": 200000,
+          "compliance": true
+        },
+        "create_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "delete_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "enter_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "back_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 3000,
+          "compliance": true
+        }
+      },
+      "visualization_path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/results/comparison_visualization_character_selection_with_characters.png",
+      "compliance": true
+    },
+    "character_selection_max_characters": {
+      "screenshot_name": "character_selection_max_characters",
+      "timestamp": "2025-09-28T10:36:49.687982",
+      "overall_comparison": {
+        "similarity_percentage": 99.97456868489584,
+        "pixel_differences": 200,
+        "total_pixels": 786432,
+        "similar_pixels": 786232,
+        "compliance": true,
+        "pixel_tolerance": 10,
+        "similarity_threshold": 95.0
+      },
+      "region_analysis": {
+        "background": {
+          "similarity_percentage": 99.97456868489584,
+          "pixel_differences": 200,
+          "total_pixels": 786432,
+          "compliance": true
+        },
+        "character_panel": {
+          "similarity_percentage": 99.95,
+          "pixel_differences": 100,
+          "total_pixels": 200000,
+          "compliance": true
+        },
+        "create_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "delete_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "enter_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 6000,
+          "compliance": true
+        },
+        "back_button": {
+          "similarity_percentage": 100.0,
+          "pixel_differences": 0,
+          "total_pixels": 3000,
+          "compliance": true
+        }
+      },
+      "visualization_path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/results/comparison_visualization_character_selection_max_characters.png",
+      "compliance": true
+    }
+  },
+  "compliance_status": {
+    "overall": true,
+    "individual_screenshots": {
+      "character_selection_empty": true,
+      "character_selection_with_characters": true,
+      "character_selection_max_characters": true
+    }
+  }
+}

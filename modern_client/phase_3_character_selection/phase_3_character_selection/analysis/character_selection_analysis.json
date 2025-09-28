@@ -1,0 +1,128 @@
+{
+    "screen_name": "CharacterSelectionScreen",
+    "elements": [
+        {
+            "name": "CharacterListPanel",
+            "type": "ScrollBox",
+            "position": "left_center",
+            "size": "400x500",
+            "background_color": "#1e1e2e",
+            "border_color": "#FFD700",
+            "border_thickness": 2
+        },
+        {
+            "name": "CharacterSlot1",
+            "type": "CharacterSlot",
+            "position": "list_top",
+            "size": "380x80",
+            "background_color": "#2d2d2d",
+            "hover_color": "#3d3d3d",
+            "selected_color": "#FFD700"
+        },
+        {
+            "name": "CharacterSlot2",
+            "type": "CharacterSlot",
+            "position": "list_second",
+            "size": "380x80",
+            "background_color": "#2d2d2d",
+            "hover_color": "#3d3d3d",
+            "selected_color": "#FFD700"
+        },
+        {
+            "name": "CharacterSlot3",
+            "type": "CharacterSlot",
+            "position": "list_third",
+            "size": "380x80",
+            "background_color": "#2d2d2d",
+            "hover_color": "#3d3d3d",
+            "selected_color": "#FFD700"
+        },
+        {
+            "name": "CreateCharacterButton",
+            "type": "Button",
+            "position": "bottom_left",
+            "size": "150x40",
+            "text": "Создать персонажа",
+            "font": "Arial Bold 14px",
+            "color": "#00FF00",
+            "background_color": "#2d2d2d"
+        },
+        {
+            "name": "DeleteCharacterButton",
+            "type": "Button",
+            "position": "bottom_center",
+            "size": "150x40",
+            "text": "Удалить персонажа",
+            "font": "Arial Bold 14px",
+            "color": "#FF0000",
+            "background_color": "#2d2d2d"
+        },
+        {
+            "name": "EnterGameButton",
+            "type": "Button",
+            "position": "bottom_right",
+            "size": "150x40",
+            "text": "Войти в игру",
+            "font": "Arial Bold 14px",
+            "color": "#FFD700",
+            "background_color": "#2d2d2d"
+        },
+        {
+            "name": "BackButton",
+            "type": "Button",
+            "position": "top_left",
+            "size": "100x30",
+            "text": "Назад",
+            "font": "Arial 12px",
+            "color": "#FFFFFF",
+            "background_color": "#1e1e2e"
+        }
+    ],
+    "character_slot_elements": [
+        {
+            "name": "CharacterAvatar",
+            "type": "Image",
+            "position": "slot_left",
+            "size": "60x60",
+            "background_color": "#000000"
+        },
+        {
+            "name": "CharacterName",
+            "type": "TextBlock",
+            "position": "slot_center_top",
+            "size": "200x20",
+            "font": "Arial Bold 16px",
+            "color": "#FFFFFF"
+        },
+        {
+            "name": "CharacterLevel",
+            "type": "TextBlock",
+            "position": "slot_center_middle",
+            "size": "200x15",
+            "font": "Arial 12px",
+            "color": "#FFD700"
+        },
+        {
+            "name": "CharacterClass",
+            "type": "TextBlock",
+            "position": "slot_center_bottom",
+            "size": "200x15",
+            "font": "Arial 12px",
+            "color": "#C0C0C0"
+        },
+        {
+            "name": "CharacterLocation",
+            "type": "TextBlock",
+            "position": "slot_right",
+            "size": "100x15",
+            "font": "Arial 10px",
+            "color": "#808080"
+        }
+    ],
+    "layout": "horizontal_split",
+    "background": "character_selection_bg.jpg",
+    "expected_resolution": "1024x768",
+    "max_characters": 7,
+    "character_slot_height": 80,
+    "character_slot_spacing": 5
+}

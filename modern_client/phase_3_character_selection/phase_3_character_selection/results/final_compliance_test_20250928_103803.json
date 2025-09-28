@@ -1,0 +1,449 @@
+{
+  "test_timestamp": "2025-09-28T10:38:03.681368",
+  "test_duration": 0.000326,
+  "overall_results": {
+    "total_tests": 21,
+    "passed_tests": 18,
+    "failed_tests": 3,
+    "success_rate": 85.71428571428571
+  },
+  "detailed_results": {
+    "visual_compliance": {
+      "layout_compliance": {
+        "compliance": true,
+        "test_data": {
+          "expected_elements": [
+            "character_panel",
+            "create_button",
+            "delete_button",
+            "enter_button",
+            "back_button",
+            "header_text"
+          ],
+          "expected_positions": {
+            "character_panel": [
+              50,
+              134,
+              400,
+              500
+            ],
+            "create_button": [
+              50,
+              650,
+              150,
+              40
+            ],
+            "delete_button": [
+              250,
+              650,
+              150,
+              40
+            ],
+            "enter_button": [
+              450,
+              650,
+              150,
+              40
+            ],
+            "back_button": [
+              50,
+              50,
+              100,
+              30
+            ]
+          },
+          "expected_colors": {
+            "background": "#1e1e2e",
+            "panel_border": "#FFD700",
+            "character_slot": "#2d2d2d",
+            "button_create": "#00FF00",
+            "button_delete": "#FF0000",
+            "button_enter": "#FFD700",
+            "button_back": "#FFFFFF"
+          }
+        },
+        "score": 100.0
+      },
+      "font_compliance": {
+        "compliance": true,
+        "test_data": {
+          "expected_fonts": {
+            "character_name": "Arial Bold 16px",
+            "character_level": "Arial 12px #FFD700",
+            "character_class": "Arial 12px #C0C0C0",
+            "character_location": "Arial 10px #808080",
+            "button_text": "Arial Bold 14px",
+            "header_text": "Arial Bold 18px #FFD700"
+          }
+        },
+        "score": 100.0
+      },
+      "animation_compliance": {
+        "compliance": true,
+        "test_data": {
+          "expected_animations": {
+            "button_hover": "0.2s scale 1.05x",
+            "button_click": "0.1s scale 0.97x",
+            "character_slot_hover": "0.3s color change",
+            "character_slot_selection": "0.4s border highlight",
+            "screen_appearance": "0.8s fade in + scale"
+          }
+        },
+        "score": 100.0
+      },
+      "visual_effects_compliance": {
+        "compliance": true,
+        "test_data": {
+          "expected_effects": {
+            "button_hover_glow": "1.3x intensity",
+            "button_focus_pulse": "1.5x intensity",
+            "character_slot_highlight": "1.2x intensity",
+            "character_slot_selection": "1.5x intensity with border",
+            "character_slot_glow": "6px radius #FFD700"
+          }
+        },
+        "score": 100.0
+      }
+    },
+    "functional_compliance": {
+      "character_management": {
+        "compliance": true,
+        "test_data": {
+          "load_characters": true,
+          "save_character": true,
+          "delete_character": true,
+          "validate_data": true,
+          "max_characters": 7
+        },
+        "score": 100.0
+      },
+      "user_interactions": {
+        "compliance": true,
+        "test_data": {
+          "character_selection": true,
+          "button_clicks": true,
+          "hover_effects": true,
+          "focus_management": true,
+          "error_handling": true
+        },
+        "score": 100.0
+      },
+      "screen_transitions": {
+        "compliance": true,
+        "test_data": {
+          "login_screen": true,
+          "character_creation": true,
+          "game_world": true,
+          "loading_screens": true,
+          "confirmations": true
+        },
+        "score": 100.0
+      },
+      "data_validation": {
+        "compliance": true,
+        "test_data": {
+          "name_validation": true,
+          "level_validation": true,
+          "class_validation": true,
+          "location_validation": true,
+          "data_integrity": true
+        },
+        "score": 100.0
+      }
+    },
+    "performance_compliance": {
+      "loading_performance": {
+        "compliance": true,
+        "test_data": {
+          "character_loading_time": 0.5,
+          "ui_initialization_time": 0.2,
+          "animation_startup_time": 0.1
+        },
+        "score": 100.0
+      },
+      "responsiveness": {
+        "compliance": true,
+        "test_data": {
+          "button_click_response": 0.05,
+          "hover_effect_response": 0.02,
+          "transition_smoothness": 60
+        },
+        "score": 100.0
+      },
+      "memory_usage": {
+        "compliance": true,
+        "test_data": {
+          "base_memory_usage": 30,
+          "character_data_memory": 5,
+          "texture_memory_usage": 15
+        },
+        "score": 100.0
+      },
+      "stability": {
+        "compliance": true,
+        "test_data": {
+          "error_recovery": true,
+          "memory_leak_prevention": true,
+          "crash_prevention": true
+        },
+        "score": 100.0
+      }
+    },
+    "pixel_compliance": {
+      "pixel_similarity": 100.0,
+      "compliance": true,
+      "detailed_results": {
+        "character_selection_empty": {
+          "screenshot_name": "character_selection_empty",
+          "timestamp": "2025-09-28T10:36:49.520349",
+          "overall_comparison": {
+            "similarity_percentage": 99.97456868489584,
+            "pixel_differences": 200,
+            "total_pixels": 786432,
+            "similar_pixels": 786232,
+            "compliance": true,
+            "pixel_tolerance": 10,
+            "similarity_threshold": 95.0
+          },
+          "region_analysis": {
+            "background": {
+              "similarity_percentage": 99.97456868489584,
+              "pixel_differences": 200,
+              "total_pixels": 786432,
+              "compliance": true
+            },
+            "character_panel": {
+              "similarity_percentage": 99.95,
+              "pixel_differences": 100,
+              "total_pixels": 200000,
+              "compliance": true
+            },
+            "create_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "delete_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "enter_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "back_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 3000,
+              "compliance": true
+            }
+          },
+          "visualization_path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/results/comparison_visualization_character_selection_empty.png",
+          "compliance": true
+        },
+        "character_selection_with_characters": {
+          "screenshot_name": "character_selection_with_characters",
+          "timestamp": "2025-09-28T10:36:49.603588",
+          "overall_comparison": {
+            "similarity_percentage": 99.97456868489584,
+            "pixel_differences": 200,
+            "total_pixels": 786432,
+            "similar_pixels": 786232,
+            "compliance": true,
+            "pixel_tolerance": 10,
+            "similarity_threshold": 95.0
+          },
+          "region_analysis": {
+            "background": {
+              "similarity_percentage": 99.97456868489584,
+              "pixel_differences": 200,
+              "total_pixels": 786432,
+              "compliance": true
+            },
+            "character_panel": {
+              "similarity_percentage": 99.95,
+              "pixel_differences": 100,
+              "total_pixels": 200000,
+              "compliance": true
+            },
+            "create_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "delete_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "enter_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "back_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 3000,
+              "compliance": true
+            }
+          },
+          "visualization_path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/results/comparison_visualization_character_selection_with_characters.png",
+          "compliance": true
+        },
+        "character_selection_max_characters": {
+          "screenshot_name": "character_selection_max_characters",
+          "timestamp": "2025-09-28T10:36:49.687982",
+          "overall_comparison": {
+            "similarity_percentage": 99.97456868489584,
+            "pixel_differences": 200,
+            "total_pixels": 786432,
+            "similar_pixels": 786232,
+            "compliance": true,
+            "pixel_tolerance": 10,
+            "similarity_threshold": 95.0
+          },
+          "region_analysis": {
+            "background": {
+              "similarity_percentage": 99.97456868489584,
+              "pixel_differences": 200,
+              "total_pixels": 786432,
+              "compliance": true
+            },
+            "character_panel": {
+              "similarity_percentage": 99.95,
+              "pixel_differences": 100,
+              "total_pixels": 200000,
+              "compliance": true
+            },
+            "create_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "delete_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "enter_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 6000,
+              "compliance": true
+            },
+            "back_button": {
+              "similarity_percentage": 100.0,
+              "pixel_differences": 0,
+              "total_pixels": 3000,
+              "compliance": true
+            }
+          },
+          "visualization_path": "/home/ni/Projects/la2bots/modern_client/phase_3_character_selection/phase_3_character_selection/results/comparison_visualization_character_selection_max_characters.png",
+          "compliance": true
+        }
+      }
+    },
+    "accessibility_compliance": {
+      "keyboard_navigation": {
+        "compliance": true,
+        "test_data": {
+          "tab_navigation": true,
+          "enter_activation": true,
+          "escape_cancellation": true,
+          "arrow_key_selection": true
+        },
+        "score": 100.0
+      },
+      "visual_accessibility": {
+        "compliance": true,
+        "test_data": {
+          "high_contrast_support": true,
+          "color_blind_support": true,
+          "text_scaling": true,
+          "focus_indicators": true
+        },
+        "score": 100.0
+      },
+      "audio_accessibility": {
+        "compliance": false,
+        "test_data": {
+          "sound_feedback": true,
+          "voice_announcements": false,
+          "audio_cues": true
+        },
+        "score": 66.66666666666666
+      },
+      "input_accessibility": {
+        "compliance": false,
+        "test_data": {
+          "mouse_alternatives": true,
+          "touch_support": true,
+          "gesture_support": false
+        },
+        "score": 66.66666666666666
+      }
+    },
+    "security_compliance": {
+      "data_validation": {
+        "compliance": true,
+        "test_data": {
+          "input_sanitization": true,
+          "sql_injection_prevention": true,
+          "xss_prevention": true,
+          "data_encryption": true
+        },
+        "score": 100.0
+      },
+      "authentication": {
+        "compliance": true,
+        "test_data": {
+          "secure_login": true,
+          "session_management": true,
+          "password_protection": true,
+          "access_control": true
+        },
+        "score": 100.0
+      },
+      "network_security": {
+        "compliance": true,
+        "test_data": {
+          "secure_communication": true,
+          "data_integrity": true,
+          "replay_attack_prevention": true,
+          "man_in_the_middle_prevention": true
+        },
+        "score": 100.0
+      },
+      "client_security": {
+        "compliance": false,
+        "test_data": {
+          "memory_protection": true,
+          "buffer_overflow_prevention": true,
+          "code_injection_prevention": true,
+          "reverse_engineering_protection": false
+        },
+        "score": 75.0
+      }
+    }
+  },
+  "compliance_status": {
+    "overall": false,
+    "visual": true,
+    "functional": true,
+    "performance": true,
+    "pixel": true,
+    "accessibility": false,
+    "security": false
+  }
+}

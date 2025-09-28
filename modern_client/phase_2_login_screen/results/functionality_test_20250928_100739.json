@@ -1,0 +1,276 @@
+{
+  "test_timestamp": "2025-09-28T10:07:39.672357",
+  "test_duration": 0.000194,
+  "overall_results": {
+    "total_tests": 23,
+    "passed_tests": 21,
+    "failed_tests": 2,
+    "success_rate": 91.30434782608695
+  },
+  "detailed_results": {
+    "validation": {
+      "valid_login": {
+        "input": "testuser",
+        "expected": true,
+        "actual": true,
+        "passed": true,
+        "description": "Валидный логин"
+      },
+      "short_login": {
+        "input": "ab",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Слишком короткий логин"
+      },
+      "long_login": {
+        "input": "verylongusernamethatexceedslimit",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Слишком длинный логин"
+      },
+      "invalid_chars_login": {
+        "input": "user@name",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Логин с недопустимыми символами"
+      },
+      "valid_password": {
+        "input": "test123",
+        "expected": true,
+        "actual": true,
+        "passed": true,
+        "description": "Валидный пароль"
+      },
+      "short_password": {
+        "input": "123",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Слишком короткий пароль"
+      },
+      "password_no_letters": {
+        "input": "123456",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Пароль без букв"
+      },
+      "password_no_digits": {
+        "input": "password",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Пароль без цифр"
+      }
+    },
+    "authentication": {
+      "valid_credentials": {
+        "login": "test",
+        "password": "test123",
+        "expected": true,
+        "actual": true,
+        "passed": true,
+        "description": "Валидные учетные данные"
+      },
+      "invalid_login": {
+        "login": "wronguser",
+        "password": "test123",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Неверный логин"
+      },
+      "invalid_password": {
+        "login": "test",
+        "password": "wrongpass",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Неверный пароль"
+      },
+      "empty_credentials": {
+        "login": "",
+        "password": "",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Пустые учетные данные"
+      }
+    },
+    "transitions": {
+      "login_to_character_selection": {
+        "from": "Login",
+        "to": "CharacterSelection",
+        "expected": true,
+        "actual": true,
+        "passed": true,
+        "description": "Переход от входа к выбору персонажа"
+      },
+      "login_to_character_creation": {
+        "from": "Login",
+        "to": "CharacterCreation",
+        "expected": true,
+        "actual": true,
+        "passed": true,
+        "description": "Переход от входа к созданию персонажа"
+      },
+      "login_to_settings": {
+        "from": "Login",
+        "to": "Settings",
+        "expected": true,
+        "actual": true,
+        "passed": true,
+        "description": "Переход от входа к настройкам"
+      },
+      "invalid_transition": {
+        "from": "Login",
+        "to": "InvalidScreen",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "description": "Невалидный переход"
+      }
+    },
+    "realtime": {
+      "login_field_typing": {
+        "field": "LoginField",
+        "input_sequence": [
+          "t",
+          "e",
+          "s",
+          "t",
+          "u",
+          "s",
+          "e",
+          "r"
+        ],
+        "expected_states": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "actual_states": [
+          false,
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "passed": false,
+        "description": "Ввод в поле логина"
+      },
+      "password_field_typing": {
+        "field": "PasswordField",
+        "input_sequence": [
+          "t",
+          "e",
+          "s",
+          "t",
+          "1",
+          "2",
+          "3"
+        ],
+        "expected_states": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "actual_states": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "passed": true,
+        "description": "Ввод в поле пароля"
+      },
+      "field_clearing": {
+        "field": "LoginField",
+        "input_sequence": [
+          "t",
+          "e",
+          "s",
+          "t",
+          "",
+          "",
+          ""
+        ],
+        "expected_states": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "actual_states": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "passed": false,
+        "description": "Очистка поля"
+      }
+    },
+    "error_handling": {
+      "network_timeout": {
+        "error_type": "NetworkTimeout",
+        "expected_handling": true,
+        "actual_handling": true,
+        "passed": true,
+        "description": "Обработка таймаута сети"
+      },
+      "server_error": {
+        "error_type": "ServerError",
+        "expected_handling": true,
+        "actual_handling": true,
+        "passed": true,
+        "description": "Обработка ошибки сервера"
+      },
+      "validation_error": {
+        "error_type": "ValidationError",
+        "expected_handling": true,
+        "actual_handling": true,
+        "passed": true,
+        "description": "Обработка ошибки валидации"
+      },
+      "unknown_error": {
+        "error_type": "UnknownError",
+        "expected_handling": true,
+        "actual_handling": true,
+        "passed": true,
+        "description": "Обработка неизвестной ошибки"
+      }
+    }
+  },
+  "functionality_status": {
+    "validation_system": true,
+    "authentication_system": true,
+    "screen_transitions": true,
+    "realtime_validation": false,
+    "error_handling": true
+  }
+}

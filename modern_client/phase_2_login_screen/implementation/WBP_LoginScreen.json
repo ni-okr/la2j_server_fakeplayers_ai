@@ -1,0 +1,124 @@
+{
+  "BlueprintType": "UserWidget",
+  "ParentClass": "UserWidget",
+  "BlueprintName": "WBP_LoginScreen",
+  "Elements": {
+    "background": {
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 1024,
+        "height": 768
+      },
+      "color": "#1e1e2e",
+      "type": "background"
+    },
+    "logo": {
+      "position": {
+        "x": 362,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 100
+      },
+      "color": "#FFD700",
+      "type": "logo",
+      "text": "LINEAGE II"
+    },
+    "login_field": {
+      "position": {
+        "x": 412,
+        "y": 300
+      },
+      "size": {
+        "width": 200,
+        "height": 30
+      },
+      "backgroundColor": "#000000",
+      "borderColor": "#FFFFFF",
+      "textColor": "#FFFFFF",
+      "type": "input_field",
+      "maxLength": 16,
+      "placeholder": "Логин"
+    },
+    "password_field": {
+      "position": {
+        "x": 412,
+        "y": 340
+      },
+      "size": {
+        "width": 200,
+        "height": 30
+      },
+      "backgroundColor": "#000000",
+      "borderColor": "#FFFFFF",
+      "textColor": "#FFFFFF",
+      "type": "password_field",
+      "maxLength": 16,
+      "placeholder": "Пароль",
+      "passwordChar": "*"
+    },
+    "login_button": {
+      "position": {
+        "x": 462,
+        "y": 380
+      },
+      "size": {
+        "width": 100,
+        "height": 40
+      },
+      "backgroundColor": "#FFD700",
+      "textColor": "#000000",
+      "type": "button",
+      "text": "Войти",
+      "font": "Arial Bold 14px"
+    },
+    "register_button": {
+      "position": {
+        "x": 462,
+        "y": 430
+      },
+      "size": {
+        "width": 100,
+        "height": 40
+      },
+      "backgroundColor": "#C0C0C0",
+      "textColor": "#000000",
+      "type": "button",
+      "text": "Регистрация",
+      "font": "Arial Bold 14px"
+    },
+    "settings_button": {
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "size": {
+        "width": 80,
+        "height": 30
+      },
+      "backgroundColor": "#646464",
+      "textColor": "#FFFFFF",
+      "type": "button",
+      "text": "Настройки",
+      "font": "Arial 10px"
+    }
+  },
+  "Layout": {
+    "CanvasSize": {
+      "X": 1024,
+      "Y": 768
+    },
+    "BackgroundColor": "#1e1e2e"
+  },
+  "Events": {
+    "OnLoginButtonClicked": "Переход к экрану выбора персонажей",
+    "OnRegisterButtonClicked": "Переход к экрану регистрации",
+    "OnSettingsButtonClicked": "Открытие настроек",
+    "OnLoginTextChanged": "Валидация логина",
+    "OnPasswordTextChanged": "Валидация пароля"
+  }
+}
