@@ -6,6 +6,11 @@
 #include "Components/Image.h"
 #include "Engine/Engine.h"
 #include "Kismet/GameplayStatics.h"
+#include "RaceSelectionSystem.cpp"
+#include "GenderSelectionSystem.cpp"
+#include "ClassSelectionSystem.cpp"
+#include "CharacterCustomizationSystem.cpp"
+#include "CharacterValidationSystem.cpp"
 
 UCharacterCreationScreen::UCharacterCreationScreen(const FObjectInitializer& ObjectInitializer)
     : Super(ObjectInitializer)
@@ -45,6 +50,13 @@ void UCharacterCreationScreen::NativeConstruct()
 
 void UCharacterCreationScreen::InitializeCharacterCreation()
 {
+    // Инициализация систем выбора
+    FRaceSelectionSystem::InitializeRaceSelection(this);
+    FGenderSelectionSystem::InitializeGenderSelection(this);
+    FClassSelectionSystem::InitializeClassSelection(this);
+    FCharacterCustomizationSystem::InitializeCustomization(this);
+    FCharacterValidationSystem::InitializeValidation(this);
+
     // Настройка панелей выбора
     SetupRaceSelection();
     SetupGenderSelection();
@@ -126,6 +138,9 @@ void UCharacterCreationScreen::OnRaceSelected(FString RaceName)
     SelectedRace = RaceName;
     UE_LOG(LogTemp, Log, TEXT("Выбрана раса: %s"), *RaceName);
     
+    // Используем систему выбора расы
+    FRaceSelectionSystem::OnRaceSelected(RaceName);
+    
     // Обновляем доступные классы и кастомизацию
     UpdateAvailableClasses();
     UpdateCustomizationOptions();
@@ -137,6 +152,9 @@ void UCharacterCreationScreen::OnGenderSelected(FString GenderName)
     SelectedGender = GenderName;
     UE_LOG(LogTemp, Log, TEXT("Выбран пол: %s"), *GenderName);
     
+    // Используем систему выбора пола
+    FGenderSelectionSystem::OnGenderSelected(GenderName);
+    
     // Обновляем кастомизацию
     UpdateCustomizationOptions();
     UpdateCharacterPreview();
@@ -147,6 +165,9 @@ void UCharacterCreationScreen::OnClassSelected(FString ClassName)
     SelectedClass = ClassName;
     UE_LOG(LogTemp, Log, TEXT("Выбран класс: %s"), *ClassName);
     
+    // Используем систему выбора класса
+    FClassSelectionSystem::OnClassSelected(ClassName);
+    
     // Обновляем кастомизацию
     UpdateCustomizationOptions();
     UpdateCharacterPreview();
@@ -156,6 +177,9 @@ void UCharacterCreationScreen::OnCustomizationChanged(FString OptionName, FStrin
 {
     CustomizationOptions.Add(OptionName, Value);
     UE_LOG(LogTemp, Log, TEXT("Изменена кастомизация %s: %s"), *OptionName, *Value);
+    
+    // Используем систему кастомизации
+    FCharacterCustomizationSystem::OnCustomizationChanged(OptionName, Value);
     
     UpdateCharacterPreview();
 }
@@ -170,38 +194,21 @@ void UCharacterCreationScreen::UpdateCharacterPreview()
 
 bool UCharacterCreationScreen::ValidateCharacterData()
 {
-    // Проверяем обязательные поля
-    if (CharacterName.IsEmpty())
+    // Используем систему валидации
+    FCharacterValidationSystem::FValidationResult ValidationResult = 
+        FCharacterValidationSystem::ValidateCharacter(CharacterName, SelectedRace, SelectedGender, SelectedClass);
+    
+    if (!ValidationResult.bIsValid)
     {
-        ShowErrorMessage(TEXT("Введите имя персонажа"));
+        ShowErrorMessage(ValidationResult.ErrorMessage);
         return false;
     }
-
-    if (SelectedRace.IsEmpty())
+    
+    if (!ValidationResult.WarningMessage.IsEmpty())
     {
-        ShowErrorMessage(TEXT("Выберите расу персонажа"));
-        return false;
+        UE_LOG(LogTemp, Warning, TEXT("Предупреждение валидации: %s"), *ValidationResult.WarningMessage);
     }
-
-    if (SelectedGender.IsEmpty())
-    {
-        ShowErrorMessage(TEXT("Выберите пол персонажа"));
-        return false;
-    }
-
-    if (SelectedClass.IsEmpty())
-    {
-        ShowErrorMessage(TEXT("Выберите класс персонажа"));
-        return false;
-    }
-
-    // Дополнительные проверки
-    if (CharacterName.Len() < 3 || CharacterName.Len() > 16)
-    {
-        ShowErrorMessage(TEXT("Имя персонажа должно содержать от 3 до 16 символов"));
-        return false;
-    }
-
+    
     HideErrorMessage();
     return true;
 }
