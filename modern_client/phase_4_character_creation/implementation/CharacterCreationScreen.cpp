@@ -15,6 +15,9 @@
 #include "CharacterCreationAnimationSystem.cpp"
 #include "CharacterCreationVisualEffects.cpp"
 #include "CharacterCreationRealtimeValidation.cpp"
+#include "CharacterCreationPixelComparison.cpp"
+#include "CharacterCreationPerformanceOptimization.cpp"
+#include "CharacterCreationAccessibilitySecurity.cpp"
 
 UCharacterCreationScreen::UCharacterCreationScreen(const FObjectInitializer& ObjectInitializer)
     : Super(ObjectInitializer)
@@ -66,6 +69,11 @@ void UCharacterCreationScreen::InitializeCharacterCreation()
     FCharacterCreationAnimationSystem::InitializeAnimationSystem(this);
     FCharacterCreationVisualEffects::InitializeVisualEffects(this);
     FCharacterCreationRealtimeValidation::InitializeRealtimeValidation(this);
+
+    // Инициализация систем финального тестирования
+    FCharacterCreationPixelComparison::InitializePixelComparison(this);
+    FCharacterCreationPerformanceOptimization::InitializePerformanceOptimization(this);
+    FCharacterCreationAccessibilitySecurity::InitializeAccessibilitySecurity(this);
 
     // Настройка панелей выбора
     SetupRaceSelection();
