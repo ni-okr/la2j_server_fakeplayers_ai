@@ -1,0 +1,108 @@
+{
+  "widget_name": "WBP_CharacterCreationScreen",
+  "parent_class": "CharacterCreationScreen",
+  "resolution": "1280x720",
+  "components": {
+    "main_panel": {
+      "type": "CanvasPanel",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "background_color": "#1a1a1a"
+    },
+    "race_selection_panel": {
+      "type": "ScrollBox",
+      "position": {
+        "x": 100,
+        "y": 150,
+        "width": 200,
+        "height": 300
+      },
+      "background_color": "#2d2d2d"
+    },
+    "gender_selection_panel": {
+      "type": "ScrollBox",
+      "position": {
+        "x": 350,
+        "y": 150,
+        "width": 150,
+        "height": 100
+      },
+      "background_color": "#2d2d2d"
+    },
+    "class_selection_panel": {
+      "type": "ScrollBox",
+      "position": {
+        "x": 550,
+        "y": 150,
+        "width": 200,
+        "height": 300
+      },
+      "background_color": "#2d2d2d"
+    },
+    "customization_panel": {
+      "type": "ScrollBox",
+      "position": {
+        "x": 800,
+        "y": 150,
+        "width": 300,
+        "height": 400
+      },
+      "background_color": "#2d2d2d"
+    },
+    "character_preview": {
+      "type": "Image",
+      "position": {
+        "x": 100,
+        "y": 500,
+        "width": 300,
+        "height": 200
+      },
+      "background_color": "#3d3d3d"
+    },
+    "name_input_field": {
+      "type": "EditableTextBox",
+      "position": {
+        "x": 450,
+        "y": 500,
+        "width": 200,
+        "height": 30
+      },
+      "placeholder_text": "Введите имя персонажа"
+    },
+    "create_button": {
+      "type": "Button",
+      "position": {
+        "x": 700,
+        "y": 500,
+        "width": 100,
+        "height": 40
+      },
+      "text": "Создать"
+    },
+    "cancel_button": {
+      "type": "Button",
+      "position": {
+        "x": 850,
+        "y": 500,
+        "width": 100,
+        "height": 40
+      },
+      "text": "Отмена"
+    },
+    "error_message": {
+      "type": "TextBlock",
+      "position": {
+        "x": 450,
+        "y": 550,
+        "width": 400,
+        "height": 30
+      },
+      "text_color": "#ff0000",
+      "visibility": "Hidden"
+    }
+  }
+}
