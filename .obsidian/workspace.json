@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-vault/03-ИИ-Система/Система-глубокого-обучения.md",
+                "file": "obsidian-vault/07-Тестирование/План-тестирования.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Система-глубокого-обучения"
+              "title": "План-тестирования"
             }
           }
         ]
@@ -171,24 +171,31 @@
   },
   "active": "f64193dcdd1200c4",
   "lastOpenFiles": [
+    "docs/status/PHASE_4_1_ANALYSIS_COMPLETION_REPORT.md",
+    "modern_client/phase_4_character_creation/analysis/PHASE_4_1_ANALYSIS_COMPLETION_REPORT.md",
+    "obsidian-vault/06-Игровые-Активности/Экономика.md",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/report.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/features.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/_version.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/_util.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/_typing.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/_tkinter_finder.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/_deprecate.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/_binary.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/__main__.cpython-312.pyc",
+    "modern_client/venv/lib/python3.12/site-packages/PIL/__pycache__/__init__.cpython-312.pyc",
+    "obsidian-vault/05-Кланы/Система-кланов.md",
+    "obsidian-vault/03-ИИ-Система/Convolutional-Neural-Networks.md",
+    "modern_client/phase_4_character_creation/analysis/character_creation_detailed_analysis.md",
+    "obsidian-vault/03-ИИ-Система/Система-глубокого-обучения.md",
     "docs/status/PHASE_4_STARTUP_REPORT.md",
     "modern_client/phase_4_character_creation/PHASE_4_STARTUP_REPORT.md",
-    "modern_client/phase_4_character_creation/tests/test_character_creation_screen.py",
-    "modern_client/phase_4_character_creation/tests",
-    "modern_client/phase_4_character_creation/results",
-    "modern_client/phase_4_character_creation/progress_report.json",
     "modern_client/phase_4_character_creation/IMPLEMENTATION_GUIDE.md",
-    "modern_client/phase_4_character_creation/implementation/WBP_CharacterCreationScreen.json",
-    "modern_client/phase_4_character_creation/implementation/CharacterCreationScreen.h",
-    "modern_client/phase_4_character_creation/implementation/CharacterCreationScreen.cpp",
-    "modern_client/phase_4_character_creation/implementation",
     "modern_client/phase_4_character_creation/analysis/reference_character_creation_race_selection.png",
     "modern_client/phase_4_character_creation/analysis/reference_character_creation_gender_selection.png",
     "modern_client/phase_4_character_creation/analysis/reference_character_creation_empty.png",
     "modern_client/phase_4_character_creation/analysis/reference_character_creation_customization.png",
     "modern_client/phase_4_character_creation/analysis/reference_character_creation_class_selection.png",
-    "modern_client/phase_4_character_creation/analysis/character_creation_analysis.json",
-    "modern_client/phase_4_character_creation/analysis",
     "modern_client/phase_4_character_creation/phase_4_character_creation/phase_4_character_creation/IMPLEMENTATION_GUIDE.md",
     "modern_client/phase_4_character_creation/phase_4_character_creation/phase_4_character_creation/analysis/reference_character_creation_race_selection.png",
     "modern_client/phase_4_character_creation/phase_4_character_creation/phase_4_character_creation/analysis/reference_character_creation_gender_selection.png",
@@ -209,13 +216,6 @@
     "obsidian-vault/02-Архитектура/Архитектура-системы-ботов.md",
     "obsidian-vault/02-Архитектура/Архитектура-сервера.md",
     "obsidian-vault/01-Планирование/Техническое-задание-обновленное.md",
-    "obsidian-vault/01-Планирование/Техническое-задание.md",
-    "obsidian-vault/01-Планирование/Технические-рекомендации-v6.0.md",
-    "obsidian-vault/01-Планирование/Стратегия-разработки-ботов.md",
-    "obsidian-vault/01-Планирование/Роадмапа-GUI-соответствия.md",
-    "obsidian-vault/01-Планирование/Роадмапа-проекта.md",
-    "obsidian-vault/01-Планирование/Планы-по-улучшению-v6.0.md",
-    "obsidian-vault/01-Планирование/План-поэтапного-развития-клиента.md",
-    "obsidian-vault/01-Планирование/Модернизация-клиента.md"
+    "obsidian-vault/01-Планирование/Техническое-задание.md"
   ]
 }
